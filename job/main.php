@@ -1,33 +1,9 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<?php
+involve('bars');
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+begin('Welcome');
 
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-
-  <link rel="stylesheet" href="assets/css/meanmenu.css" />
-
-  <link rel="stylesheet" href="assets/css/icofont.min.css" />
-
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
-
-  <link rel="stylesheet" href="assets/css/animate.min.css" />
-
-  <link rel="stylesheet" href="assets/fonts/flaticon.css" />
-
-  <link rel="stylesheet" href="assets/css/odometer.min.css" />
-
-  <link rel="stylesheet" href="assets/css/style.css" />
-
-  <link rel="stylesheet" href="assets/css/responsive.css" />
-
-  <link rel="stylesheet" href="assets/css/theme-dark.css" />
-  <title>Topeople - Job Portal</title>
-  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-</head>
+?>
 
 <body>
   <div class="loader">
@@ -44,7 +20,7 @@
     </div>
   </div>
 
-  <?php include "sidebar.php" ?>
+  <?php include 'sidebar.php'; ?>
 
   <div class="banner-area banner-area-two banner-img-two">
     <div class="d-table">
@@ -1279,7 +1255,7 @@
     </div>
   </section>
 
-  <?php include "footer.php" ?>
+  <?php include 'footer.php'; ?>
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
