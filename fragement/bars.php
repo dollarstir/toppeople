@@ -1,8 +1,15 @@
 <?php
 
-function begin($title)
-{
-    echo '<!DOCTYPE html>
+// ************************//
+// Developer : Frederick Ennin
+//Email : kpin463@gmail.com
+//github : https://github.com/dollarstir
+//  started on : Monday 1st August, 2022
+// ************************//
+
+ function begin($title)
+ {
+     echo '<!DOCTYPE html>
     <html lang="zxx">
     
     <head>
@@ -32,4 +39,4 @@ function begin($title)
       <title>Topeople - '.$title.'</title>
       <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     </head>';
-}
+ }
