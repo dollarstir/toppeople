@@ -1,32 +1,9 @@
-<!DOCTYPE html>
-<html lang="zxx">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<?php
+involve('bars');
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+begin('Employer');
 
-    <link rel="stylesheet" href="assets/css/meanmenu.css" />
-
-    <link rel="stylesheet" href="assets/css/icofont.min.css" />
-
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
-
-    <link rel="stylesheet" href="assets/css/animate.min.css" />
-
-    <link rel="stylesheet" href="assets/fonts/flaticon.css" />
-
-    <link rel="stylesheet" href="assets/css/odometer.min.css" />
-
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-
-    <link rel="stylesheet" href="assets/css/theme-dark.css" />
-    <title>Topeople - Job Portal</title>
-    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-  </head>
+?>
   <body>
     <div class="loader">
       <div class="d-table">
@@ -42,7 +19,7 @@
       </div>
     </div>
 
-    <?php include "employersSidebar.php" ?>
+    <?php include 'employersSidebar.php'; ?>
 
     <div class="banner-area banner-area-two banner-img-two">
       <div class="d-table">
@@ -289,10 +266,10 @@
             <div class="portal-item">
               <div class="row">
                 <div class="col-lg-7">
-                  <img src="assets/img/home-1/1.jpg" alt="Portal" />
+                  <img src="job/assets/img/home-1/1.jpg" alt="Portal" />
                 </div>
                 <div class="col-lg-5">
-                  <img src="assets/img/home-1/2.jpg" alt="Portal" />
+                  <img src="job/assets/img/home-1/2.jpg" alt="Portal" />
                 </div>
               </div>
               <div class="portal-trusted">
@@ -370,7 +347,7 @@
         </div>
         <div class="companies-slider owl-theme owl-carousel">
           <div class="companies-item">
-            <img src="assets/img/home-1/companies/1.png" alt="Companies" />
+            <img src="job/assets/img/home-1/companies/1.png" alt="Companies" />
             <h3>
               <a href="company-details.php">Winbrans.com</a>
             </h3>
@@ -381,7 +358,7 @@
             <a class="companies-btn" href="create-account.php">Hiring</a>
           </div>
           <div class="companies-item">
-            <img src="assets/img/home-1/companies/2.png" alt="Companies" />
+            <img src="job/assets/img/home-1/companies/2.png" alt="Companies" />
             <h3>
               <a href="company-details.php">Infiniza.com</a>
             </h3>
@@ -392,7 +369,7 @@
             <a class="companies-btn" href="create-account.php">Hiring</a>
           </div>
           <div class="companies-item">
-            <img src="assets/img/home-1/companies/3.png" alt="Companies" />
+            <img src="job/assets/img/home-1/companies/3.png" alt="Companies" />
             <h3>
               <a href="company-details.php">Glovibo.com</a>
             </h3>
@@ -403,7 +380,7 @@
             <a class="companies-btn" href="create-account.php">Hiring</a>
           </div>
           <div class="companies-item">
-            <img src="assets/img/home-1/companies/4.png" alt="Companies" />
+            <img src="job/assets/img/home-1/companies/4.png" alt="Companies" />
             <h3>
               <a href="company-details.php">Bizotic.com</a>
             </h3>
@@ -414,7 +391,7 @@
             <a class="companies-btn" href="create-account.php">Hiring</a>
           </div>
           <div class="companies-item">
-            <img src="assets/img/home-1/companies/1.png" alt="Companies" />
+            <img src="job/assets/img/home-1/companies/1.png" alt="Companies" />
             <h3>
               <a href="company-details.php">Winbrans.com</a>
             </h3>
@@ -425,7 +402,7 @@
             <a class="companies-btn" href="create-account.php">Hiring</a>
           </div>
           <div class="companies-item">
-            <img src="assets/img/home-1/companies/2.png" alt="Companies" />
+            <img src="job/assets/img/home-1/companies/2.png" alt="Companies" />
             <h3>
               <a href="company-details.php">Infiniza.com</a>
             </h3>
@@ -436,7 +413,7 @@
             <a class="companies-btn" href="create-account.php">Hiring</a>
           </div>
           <div class="companies-item">
-            <img src="assets/img/home-1/companies/3.png" alt="Companies" />
+            <img src="job/assets/img/home-1/companies/3.png" alt="Companies" />
             <h3>
               <a href="company-details.php">Glovibo.com</a>
             </h3>
@@ -447,7 +424,7 @@
             <a class="companies-btn" href="create-account.php">Hiring</a>
           </div>
           <div class="companies-item">
-            <img src="assets/img/home-1/companies/4.png" alt="Companies" />
+            <img src="job/assets/img/home-1/companies/4.png" alt="Companies" />
             <h3>
               <a href="company-details.php">Bizotic.com</a>
             </h3>
@@ -458,7 +435,7 @@
             <a class="companies-btn" href="create-account.php">Hiring</a>
           </div>
           <div class="companies-item">
-            <img src="assets/img/home-1/companies/1.png" alt="Companies" />
+            <img src="job/assets/img/home-1/companies/1.png" alt="Companies" />
             <h3>
               <a href="company-details.php">Winbrans.com</a>
             </h3>
@@ -469,7 +446,7 @@
             <a class="companies-btn" href="create-account.php">Hiring</a>
           </div>
           <div class="companies-item">
-            <img src="assets/img/home-1/companies/2.png" alt="Companies" />
+            <img src="job/assets/img/home-1/companies/2.png" alt="Companies" />
             <h3>
               <a href="company-details.php">Infiniza.com</a>
             </h3>
@@ -480,7 +457,7 @@
             <a class="companies-btn" href="create-account.php">Hiring</a>
           </div>
           <div class="companies-item">
-            <img src="assets/img/home-1/companies/3.png" alt="Companies" />
+            <img src="job/assets/img/home-1/companies/3.png" alt="Companies" />
             <h3>
               <a href="company-details.php">Glovibo.com</a>
             </h3>
@@ -491,7 +468,7 @@
             <a class="companies-btn" href="create-account.php">Hiring</a>
           </div>
           <div class="companies-item">
-            <img src="assets/img/home-1/companies/4.png" alt="Companies" />
+            <img src="job/assets/img/home-1/companies/4.png" alt="Companies" />
             <h3>
               <a href="company-details.php">Bizotic.com</a>
             </h3>
@@ -514,12 +491,12 @@
             <div class="popular-item">
               <div class="row align-items-center">
                 <div class="col-lg-7">
-                  <img src="assets/img/home-1/3.jpg" alt="Popular" />
+                  <img src="job/assets/img/home-1/3.jpg" alt="Popular" />
                 </div>
                 <div class="col-lg-5">
                   <div class="practice-inner">
-                    <img src="assets/img/home-1/4.jpg" alt="Popular" />
-                    <img src="assets/img/home-1/5.jpg" alt="Popular" />
+                    <img src="job/assets/img/home-1/4.jpg" alt="Popular" />
+                    <img src="job/assets/img/home-1/5.jpg" alt="Popular" />
                   </div>
                 </div>
               </div>
@@ -575,7 +552,7 @@
         </div>
         <div class="profile-slider owl-theme owl-carousel">
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/1.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/1.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Jerry Hudson</h3>
               <span>Business Consultant</span>
@@ -591,7 +568,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/2.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/2.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Jac Jacson</h3>
               <span>Web Consultant</span>
@@ -607,7 +584,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/3.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/3.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Tom Potter</h3>
               <span>UX/UI Consultant</span>
@@ -623,7 +600,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/4.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/4.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Shane Mac</h3>
               <span>SEO Consultant </span>
@@ -639,7 +616,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/5.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/5.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Jerry Hudson</h3>
               <span>Business Consultant</span>
@@ -655,7 +632,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/6.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/6.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Jac Jacson</h3>
               <span>Web Consultant</span>
@@ -671,7 +648,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/7.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/7.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Tom Potter</h3>
               <span>UX/UI Consultant</span>
@@ -687,7 +664,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/8.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/8.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Shane Mac</h3>
               <span>SEO Consultant </span>
@@ -703,7 +680,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/1.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/1.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Jerry Hudson</h3>
               <span>Business Consultant</span>
@@ -719,7 +696,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/2.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/2.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Jac Jacson</h3>
               <span>Web Consultant</span>
@@ -735,7 +712,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/3.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/3.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Tom Potter</h3>
               <span>UX/UI Consultant</span>
@@ -751,7 +728,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/4.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/4.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Shane Mac</h3>
               <span>SEO Consultant </span>
@@ -777,7 +754,7 @@
         </div>
         <div class="profile-slider owl-theme owl-carousel">
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/1.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/1.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Jerry Hudson</h3>
               <span>Business Consultant</span>
@@ -793,7 +770,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/2.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/2.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Jac Jacson</h3>
               <span>Web Consultant</span>
@@ -809,7 +786,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/3.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/3.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Tom Potter</h3>
               <span>UX/UI Consultant</span>
@@ -825,7 +802,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/4.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/4.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Shane Mac</h3>
               <span>SEO Consultant </span>
@@ -841,7 +818,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/5.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/5.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Jerry Hudson</h3>
               <span>Business Consultant</span>
@@ -857,7 +834,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/6.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/6.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Jac Jacson</h3>
               <span>Web Consultant</span>
@@ -873,7 +850,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/7.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/7.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Tom Potter</h3>
               <span>UX/UI Consultant</span>
@@ -889,7 +866,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/8.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/8.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Shane Mac</h3>
               <span>SEO Consultant </span>
@@ -905,7 +882,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/1.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/1.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Jerry Hudson</h3>
               <span>Business Consultant</span>
@@ -921,7 +898,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/2.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/2.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Jac Jacson</h3>
               <span>Web Consultant</span>
@@ -937,7 +914,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/3.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/3.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Tom Potter</h3>
               <span>UX/UI Consultant</span>
@@ -953,7 +930,7 @@
             </div>
           </div>
           <div class="profile-item">
-            <img src="assets/img/home-1/profile/4.jpg" alt="Profile" />
+            <img src="job/assets/img/home-1/profile/4.jpg" alt="Profile" />
             <div class="profile-inner">
               <h3>Shane Mac</h3>
               <span>SEO Consultant </span>
@@ -995,7 +972,7 @@
           <div class="row">
             <div class="col-lg-6 mix web ui">
               <div class="job-item">
-                <img src="assets/img/home-1/jobs/1.png" alt="Job" />
+                <img src="job/assets/img/home-1/jobs/1.png" alt="Job" />
                 <div class="job-inner align-items-center">
                   <div class="job-inner-left">
                     <h3>
@@ -1030,7 +1007,7 @@
             </div>
             <div class="col-lg-6 mix ui web">
               <div class="job-item">
-                <img src="assets/img/home-1/jobs/2.png" alt="Job" />
+                <img src="job/assets/img/home-1/jobs/2.png" alt="Job" />
                 <div class="job-inner align-items-center">
                   <div class="job-inner-left">
                     <h3><a href="job-details.html">Android Developer</a></h3>
@@ -1063,7 +1040,7 @@
             </div>
             <div class="col-lg-6 mix branding wp">
               <div class="job-item">
-                <img src="assets/img/home-1/jobs/3.png" alt="Job" />
+                <img src="job/assets/img/home-1/jobs/3.png" alt="Job" />
                 <div class="job-inner align-items-center">
                   <div class="job-inner-left">
                     <h3>
@@ -1098,7 +1075,7 @@
             </div>
             <div class="col-lg-6 mix ux branding">
               <div class="job-item">
-                <img src="assets/img/home-1/jobs/4.png" alt="Job" />
+                <img src="job/assets/img/home-1/jobs/4.png" alt="Job" />
                 <div class="job-inner align-items-center">
                   <div class="job-inner-left">
                     <h3>
@@ -1133,7 +1110,7 @@
             </div>
             <div class="col-lg-6 mix wp web">
               <div class="job-item">
-                <img src="assets/img/home-1/jobs/5.png" alt="Job" />
+                <img src="job/assets/img/home-1/jobs/5.png" alt="Job" />
                 <div class="job-inner align-items-center">
                   <div class="job-inner-left">
                     <h3>
@@ -1168,7 +1145,7 @@
             </div>
             <div class="col-lg-6 mix web ui">
               <div class="job-item">
-                <img src="assets/img/home-1/jobs/6.png" alt="Job" />
+                <img src="job/assets/img/home-1/jobs/6.png" alt="Job" />
                 <div class="job-inner align-items-center">
                   <div class="job-inner-left">
                     <h3>
@@ -1203,7 +1180,7 @@
             </div>
             <div class="col-lg-6 mix ux ui">
               <div class="job-item">
-                <img src="assets/img/home-1/jobs/7.png" alt="Job" />
+                <img src="job/assets/img/home-1/jobs/7.png" alt="Job" />
                 <div class="job-inner align-items-center">
                   <div class="job-inner-left">
                     <h3>
@@ -1236,7 +1213,7 @@
             </div>
             <div class="col-lg-6 mix branding web">
               <div class="job-item">
-                <img src="assets/img/home-1/jobs/8.png" alt="Job" />
+                <img src="job/assets/img/home-1/jobs/8.png" alt="Job" />
                 <div class="job-inner align-items-center">
                   <div class="job-inner-left">
                     <h3>
@@ -1301,8 +1278,8 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="app-item app-left">
-              <img src="assets/img/home-1/6.png" alt="Mobile" />
-              <img src="assets/img/home-1/7.png" alt="Mobile" />
+              <img src="job/assets/img/home-1/6.png" alt="Mobile" />
+              <img src="job/assets/img/home-1/7.png" alt="Mobile" />
             </div>
           </div>
           <div class="col-lg-6">
@@ -1343,7 +1320,7 @@
             <div class="blog-item wow fadeInUp" data-wow-delay=".3s">
               <div class="blog-top">
                 <a href="blog-details.php">
-                  <img src="assets/img/home-1/blog/1.jpg" alt="Blog" />
+                  <img src="job/assets/img/home-1/blog/1.jpg" alt="Blog" />
                 </a>
                 <span>21 May, 2020</span>
               </div>
@@ -1355,7 +1332,7 @@
                 </h3>
                 <ul>
                   <li>
-                    <img src="assets/img/home-1/blog/1.png" alt="Blog" />
+                    <img src="job/assets/img/home-1/blog/1.png" alt="Blog" />
                     Aikin Ward
                   </li>
                   <li>
@@ -1372,7 +1349,7 @@
             <div class="blog-item wow fadeInUp" data-wow-delay=".4s">
               <div class="blog-top">
                 <a href="blog-details.php">
-                  <img src="assets/img/home-1/blog/2.jpg" alt="Blog" />
+                  <img src="job/assets/img/home-1/blog/2.jpg" alt="Blog" />
                 </a>
                 <span>22 May, 2020</span>
               </div>
@@ -1384,7 +1361,7 @@
                 </h3>
                 <ul>
                   <li>
-                    <img src="assets/img/home-1/blog/1.png" alt="Blog" />
+                    <img src="job/assets/img/home-1/blog/1.png" alt="Blog" />
                     Aikin Ward
                   </li>
                   <li>
@@ -1401,7 +1378,7 @@
             <div class="blog-item wow fadeInUp" data-wow-delay=".5s">
               <div class="blog-top">
                 <a href="blog-details.php">
-                  <img src="assets/img/home-1/blog/3.jpg" alt="Blog" />
+                  <img src="job/assets/img/home-1/blog/3.jpg" alt="Blog" />
                 </a>
                 <span>23 May, 2020</span>
               </div>
@@ -1413,7 +1390,7 @@
                 </h3>
                 <ul>
                   <li>
-                    <img src="assets/img/home-1/blog/1.png" alt="Blog" />
+                    <img src="job/assets/img/home-1/blog/1.png" alt="Blog" />
                     Aikin Ward
                   </li>
                   <li>
@@ -1430,28 +1407,9 @@
       </div>
     </section> -->
 
-    <?php include "footer.php" ?>
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/jquery.meanmenu.js"></script>
-
-    <script src="assets/js/jquery.mixitup.min.js"></script>
-
-    <script src="assets/js/owl.carousel.min.js"></script>
-
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-
-    <script src="assets/js/form-validator.min.js"></script>
-
-    <script src="assets/js/contact-form-script.js"></script>
-
-    <script src="assets/js/wow.min.js"></script>
-
-    <script src="assets/js/odometer.min.js"></script>
-    <script src="assets/js/jquery.appear.min.js"></script>
-
-    <script src="assets/js/custom.js"></script>
+    <?php
+        foot();
+        scripts();
+  ?>
   </body>
 </html>
