@@ -19,7 +19,7 @@ begin('Employer');
       </div>
     </div>
 
-    <?php include 'employersSidebar.php'; ?>
+    <?php employerbar(); ?>
 
     <div class="banner-area banner-area-two banner-img-two">
       <div class="d-table">
