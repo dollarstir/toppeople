@@ -434,3 +434,12 @@
       </div>
     </footer>';
   }
+
+  function employerbar()
+  {
+      echo '';
+  }
+
+  function candidatebar()
+  {
+  }
