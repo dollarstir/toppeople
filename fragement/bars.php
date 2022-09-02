@@ -59,11 +59,11 @@
            <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
              <ul class="navbar-nav">
                <li class="nav-item">
-                 <a href="index.php" class="nav-link">Home</a>
+                 <a href="home" class="nav-link">Home</a>
                </li>
    
                <li class="nav-item">
-                 <a href="employers.php" class="nav-link">Employer</a>
+                 <a href="employer" class="nav-link">Employer</a>
                </li>
    
                <li class="nav-item">
