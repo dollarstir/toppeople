@@ -19,6 +19,8 @@ addtable(
         addcolumn('type', 'string', 100),
         addcolumn('salary', 'string', 100, true),
         addcolumn('description', 'text', null),
+        addcolumn('status', 'string', 100),
+        addcolumn('dateposted', 'string', 100),
     ]
 );
 

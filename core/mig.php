@@ -26,7 +26,7 @@ function execSQL($sql = '')
 function addColumn(
     $name,
     $type,
-    $length = 100,
+    $length,
     $is_null = false,
     $increment = false,
     $key = false,
