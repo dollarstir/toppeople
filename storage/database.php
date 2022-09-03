@@ -50,6 +50,7 @@ addtable('candidate', [
     addColumn('gender', 'string', 100),
     addColumn('jobtitle', 'string', 100),
     addColumn('bio', 'text', null),
+    addColumn('photo', 'text', null),
     addColumn('password', 'string', 100),
     addColumn('status', 'string', 100),
     addColumn('dateadded', 'string', 100),
