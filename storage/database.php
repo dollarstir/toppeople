@@ -14,12 +14,17 @@ addtable(
         addColumn('title', 'string', 50),
         addcolumn('company', 'string', 100),
         addcolumn('category', 'string', 100),
-        addcolumn('address', 'text', null, true),
+        // addcolumn('address', 'text', null, true),
         addcolumn('vacancy', 'string', 100, true),
         addcolumn('type', 'string', 100),
         addcolumn('salary', 'string', 100, true),
-        addcolumn('description', 'text', null),
-        addcolumn('status', 'string', 100),
+        addcolumn('description', 'text', null, true),
+        addcolumn('requirement', 'text', null, true),
+        addcolumn('qualification', 'text', null, true),
+        addcolumn('experience', 'text', null, true),
+        addcolumn('deadline', 'date', null, true),
+        addcolumn('gender', 'string', 100),
+        addcolumn('status', 'string', 100, true),
         addcolumn('dateposted', 'string', 100),
     ]
 );
@@ -168,5 +173,14 @@ addtable('terms',
      addColumn('id', 'int', 11, false, true, true),
      addColumn('title', 'string', 100),
      addColumn('description', 'text', null),
+    ]
+);
+
+addtable('aboutus',
+    [
+    //  addColumn('id', 'int', 11, false, true, true),
+     addColumn('history', 'text', null, true),
+     addColumn('vision', 'text', null, true),
+     addcolumn('mission', 'text', null, true),
     ]
 );
