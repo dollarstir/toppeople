@@ -184,3 +184,23 @@ addtable('aboutus',
      addcolumn('mission', 'text', null, true),
     ]
 );
+
+addtable('settings',
+    [
+     addColumn('sitename', 'string', 100),
+     addColumn('logo', 'text', null),
+     addColumn('favicon', 'text', null),
+     addColumn('email', 'string', 100),
+     addColumn('phone', 'string', 100),
+     addColumn('address', 'text', null),
+     addColumn('about', 'text', null),
+     addColumn('facebook', 'text', null),
+     addColumn('twitter', 'text', null),
+     addColumn('linkedin', 'text', null),
+     addColumn('instagram', 'text', null),
+     addColumn('youtube', 'text', null),
+
+     addColumn('footer', 'text', null),
+     addColumn('dateadded', 'string', 100),
+    ]
+);
