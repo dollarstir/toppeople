@@ -52,6 +52,7 @@ addtable('candidate', [
     addColumn('jobtitle', 'string', 100),
     addColumn('bio', 'text', null),
     addColumn('photo', 'text', null),
+    addColumn('cv', 'text', null, true),
     addColumn('password', 'string', 100),
     addColumn('status', 'string', 100),
     addColumn('dateadded', 'string', 100),
@@ -73,6 +74,17 @@ addtable('skill',
      addColumn('cid', 'string', 100),
      addColumn('skill', 'string', 100),
      addColumn('level', 'string', 100),
+    ]
+);
+
+addTable('experience',
+    [
+     addColumn('id', 'int', 11, false, true, true),
+     addColumn('cid', 'string', 100),
+     addColumn('company', 'string', 100),
+     addColumn('position', 'string', 100),
+     addColumn('duration', 'string', 100),
+     addColumn('description', 'text', null),
     ]
 );
 
@@ -148,5 +160,13 @@ addtable('faq',
      addColumn('id', 'int', 11, false, true, true),
      addColumn('question', 'string', 100),
      addColumn('answer', 'text', null),
+    ]
+);
+
+addtable('terms',
+    [
+     addColumn('id', 'int', 11, false, true, true),
+     addColumn('title', 'string', 100),
+     addColumn('description', 'text', null),
     ]
 );
