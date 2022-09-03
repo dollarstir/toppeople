@@ -53,8 +53,8 @@
      <div class="main-nav">
        <div class="container">
          <nav class="navbar navbar-expand-md navbar-light">
-           <a class="navbar-brand" href="index.php">
-             <img src="job/assets/img/logo.png" alt="Logo" />
+           <a class="navbar-brand" href="home">
+             <img src="job/assets/img/logo.png" alt="Logo"  />
            </a>
            <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
              <ul class="navbar-nav">
