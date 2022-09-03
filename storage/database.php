@@ -94,3 +94,39 @@ addtable('savedjobs',
      addColumn('jid', 'string', 100),
     ]
 );
+
+addtable('appliedjobs',
+    [
+     addColumn('id', 'int', 11, false, true, true),
+     addColumn('cid', 'string', 100),
+     addColumn('jid', 'string', 100),
+     addColumn('status', 'string', 100),
+     addColumn('dateapplied', 'string', 100), ]
+);
+
+addtable('blog',
+    [
+     addColumn('id', 'int', 11, false, true, true),
+     addColumn('title', 'string', 100),
+     addColumn('category', 'string', 100),
+     addColumn('description', 'text', null),
+     addColumn('photo', 'text', null),
+     addColumn('status', 'string', 100),
+     addColumn('dateposted', 'string', 100),
+    ]
+);
+
+addtable('blogcategory',
+    [
+     addColumn('id', 'int', 11, false, true, true),
+     addColumn('name', 'string', 100),
+    ]
+);
+
+addtable('partners',
+    [
+     addColumn('id', 'int', 11, false, true, true),
+     addColumn('name', 'string', 100),
+     addColumn('logo', 'text', null),
+    ]
+);
