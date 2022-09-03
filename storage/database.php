@@ -130,3 +130,23 @@ addtable('partners',
      addColumn('logo', 'text', null),
     ]
 );
+
+addtable('contact',
+    [
+     addColumn('id', 'int', 11, false, true, true),
+     addColumn('name', 'string', 100),
+     addColumn('email', 'string', 100),
+     addColumn('phone', 'string', 100),
+     addColumn('subject', 'string', 100),
+     addColumn('message', 'text', null),
+     addColumn('dateadded', 'string', 100),
+    ]
+);
+
+addtable('faq',
+    [
+     addColumn('id', 'int', 11, false, true, true),
+     addColumn('question', 'string', 100),
+     addColumn('answer', 'text', null),
+    ]
+);
