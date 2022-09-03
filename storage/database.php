@@ -204,3 +204,14 @@ addtable('settings',
      addColumn('dateadded', 'string', 100),
     ]
 );
+
+addtable('cmd',
+    [
+     addColumn('id', 'int', 11, false, true, true),
+     addColumn('name', 'string', 100),
+     addColumn('email', 'string', 100),
+     addColumn('password', 'string', 100),
+     addColumn('status', 'string', 100),
+     addColumn('dateadded', 'string', 100),
+    ]
+);
