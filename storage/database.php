@@ -84,3 +84,11 @@ addtable('socials',
      addColumn('instagram', 'string', 100),
     ]
 );
+
+addtable('savedjobs',
+    [
+     addColumn('id', 'int', 11, false, true, true),
+     addColumn('cid', 'string', 100),
+     addColumn('jid', 'string', 100),
+    ]
+);
