@@ -35,6 +35,7 @@ addtable('employer', [
     addColumn('email', 'string', 100),
     addColumn('phone', 'string', 100),
     addColumn('address', 'text', null),
+    addColumn('logo', 'text', null),
     addColumn('password', 'string', 100),
     addColumn('status', 'string', 100),
     addColumn('dateadded', 'string', 100),
