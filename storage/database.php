@@ -215,3 +215,11 @@ addtable('cmd',
      addColumn('dateadded', 'string', 100),
     ]
 );
+
+addtable('newsletters',
+    [
+     addColumn('id', 'int', 11, false, true, true),
+     addColumn('email', 'string', 100),
+     addColumn('dateadded', 'string', 100),
+    ]
+);
