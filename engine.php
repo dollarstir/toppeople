@@ -28,5 +28,11 @@ $router = new Router([
             return Viewer::view('job/employers.php', $context);
         }
     ),
+
+    new Route('/newemployer',
+        function ($context) {
+            return Viewer::view('job/employer-signup.php', $context);
+        }
+    ),
 ]);
 $router->launch();
