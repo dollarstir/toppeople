@@ -115,18 +115,7 @@ begin('New Employer');
                                 <input type="password" name="password" class="form-control">
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label>Qualification Required</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label>Job Location</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
+                        
                         <!-- <div class="col-lg-12">
                             <div class="form-group">
                                 <div class="gender-area">
@@ -138,12 +127,7 @@ begin('New Employer');
                                 </div>
                             </div>
                         </div> -->
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <label>Job Description</label>
-                                <textarea id="your_message" class="form-control" rows="8"></textarea>
-                            </div>
-                        </div>
+                        
 
 
 
@@ -219,122 +203,20 @@ begin('New Employer');
 
 
 
-                        <div class="create-information-btn">
+                        <!-- <div class="create-information-btn">
                             <a href="job/#">Show Preview</a>
                             <a href="job/#">Post Job</a>
+                        </div> -->
+
+
+                        <div class="text-center">
+                            <button type="submit" class="btn create-ac-btn">Continue</button>
                         </div>
                     </div>
                 </form>
             </div>
-            <div class="create-education">
-                <div class="create-education-wrap">
-                    <div class="create-education-left">
-                        <h3>Education</h3>
-                    </div>
-                    <div class="create-education-right">
-                        <a href="job/#">Add Education</a>
-                    </div>
-                </div>
-                <form>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label>Title</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label>Degree</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label>Institute</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label>Year</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="create-skills">
-                <div class="create-skills-wrap">
-                    <div class="create-skills-left">
-                        <h3>Skill</h3>
-                    </div>
-                    <div class="create-skills-right">
-                        <a href="job/#">Edit</a>
-                        <a href="job/#">Add Skill</a>
-                    </div>
-                </div>
-                <form>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label>Title</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="skill">
-                                <p>Percentage</p>
-                                <div class="skill-bar skill1 wow slideInLeft animated">
-                                    <span class="skill-count1">70%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="create-skills">
-                <div class="create-skills-wrap">
-                    <div class="create-skills-left">
-                        <h3>Social Links</h3>
-                    </div>
-                    <div class="create-skills-right">
-                        <a href="job/#">Edit</a>
-                        <a href="job/#">Add New</a>
-                    </div>
-                </div>
-                <form>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label>Facebook</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label>Instagram</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label>Linedin</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label>Dribbble</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="text-left">
-                <button type="submit" class="btn create-ac-btn">Save</button>
-            </div>
+            
+            
         </div>
     </div>
 
