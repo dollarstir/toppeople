@@ -223,3 +223,15 @@ addtable('newsletters',
      addColumn('dateadded', 'string', 100),
     ]
 );
+
+addtable('packages',
+    [
+     addColumn('id', 'int', 11, false, true, true),
+     addColumn('name', 'string', 100),
+     addColumn('price', 'string', 100),
+     addColumn('duration', 'string', 100),
+     addColumn('description', 'text', null),
+     addColumn('status', 'string', 100),
+     addColumn('dateadded', 'string', 100),
+    ]
+);
