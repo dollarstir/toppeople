@@ -235,3 +235,13 @@ addtable('packages',
      addColumn('dateadded', 'string', 100),
     ]
 );
+
+addtable('subscription',
+    [
+     addColumn('id', 'int', 11, false, true, true),
+     addColumn('eid', 'string', 100),
+     addColumn('pid', 'string', 100),
+    addColumn('status', 'string', 100),
+     addColumn('dateadded', 'string', 100),
+    ]
+);
