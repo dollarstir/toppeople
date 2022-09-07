@@ -131,7 +131,7 @@ begin('New Employer');
 
 
 
-                        <div class="pricing-area pt-100">
+                        <!-- <div class="pricing-area pt-100">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-6 col-lg-4">
@@ -197,7 +197,7 @@ begin('New Employer');
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         
 
