@@ -115,6 +115,15 @@ begin('New Employer');
                                 <input type="password" name="password" class="form-control">
                             </div>
                         </div>
+
+
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label> Comfirm Password</label>
+                                <input type="password" name="repass" class="form-control">
+                            </div>
+                        </div>
                         
                         <!-- <div class="col-lg-12">
                             <div class="form-group">
