@@ -741,6 +741,9 @@ function employerregister($name, $email, $phone, $address, $password, $repass)
                 if (insert('employers', ['name' => $name, 'email' => $email, 'phone' => $phone, 'address' => $address, 'password' => md5($password), 'status' => 'active', 'dateadded' => date('jS F, Y')], $_FILES, '../yolkassets/upload') == 'success') {
                     echo 'success';
                 }
+                else{
+                  echo 'failed to create account try again';
+                }
             }
         }
     }
