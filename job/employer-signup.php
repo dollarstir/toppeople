@@ -51,7 +51,7 @@ begin('New Employer');
         <div class="container">
             <div class="create-photo">
                 
-                <form>
+                <form class="emploerregister">
                     <div class="row align-items-center">
                         <div class="col-lg-4">
                             <div class="create-photo-item">
@@ -60,7 +60,7 @@ begin('New Employer');
                                         <div class="d-table-cell">
                                             <div class="form-group">
                                                 <i class="icofont-photobucket"></i>
-                                                <input type="file" class="form-control-file">
+                                                <input type="file" name="logo" class="form-control-file">
                                             </div>
                                         </div>
                                     </div>

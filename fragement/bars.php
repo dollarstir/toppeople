@@ -34,6 +34,7 @@
       <link rel="stylesheet" href="job/assets/css/style.css" />
     
       <link rel="stylesheet" href="job/assets/css/responsive.css" />
+      <link rel="stylesheet" href="ui/css/sweetalert2.min.css" />
     
       <link rel="stylesheet" href="job/assets/css/theme-dark.css" />
       <title>Topeople - '.$title.'</title>
@@ -212,7 +213,10 @@
       <script src="job/assets/js/odometer.min.js"></script>
       <script src="job/assets/js/jquery.appear.min.js"></script>
     
-      <script src="job/assets/js/custom.js"></script>';
+      <script src="job/assets/js/custom.js"></script>
+      <script src="ui/js/sweetalert2.all.min.js"></script>
+
+      <script src="processor/processor.js"></script>';
   }
 
   function foot()

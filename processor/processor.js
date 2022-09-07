@@ -1,5 +1,9 @@
 
 $(function(){
+
+
+
+ 
    $('#socl').click(function(){
     swal({
         title: "Done!",
@@ -130,7 +134,7 @@ $(function(){
 
 
 
-$('.welcome').submit(function(e){
+$('.emploerregister').submit(function(e){
 
     e.preventDefault();
     // before();
