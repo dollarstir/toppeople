@@ -1,7 +1,10 @@
 
 $(function(){
 
-
+   function loadfile(event) {
+    var image = document.getElementById('output');
+    image.src = URL.createObjectURL(event.target.files[0]);
+  };
 
  
    $('#socl').click(function(){
@@ -139,7 +142,7 @@ $('.emploerregister').submit(function(e){
     e.preventDefault();
     // before();
     var staff = {
-        url: 'processor/processor.php?action=welcome',
+        url: 'processor/processor.php?action=emploerregister',
         type: 'post',
         data: new FormData(this),
         cache: false,

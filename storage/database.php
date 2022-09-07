@@ -34,7 +34,7 @@ addtable('category', [
     addColumn('name', 'string', 100),
 ]);
 
-addtable('employer', [
+addtable('employers', [
     addColumn('id', 'int', 11, false, true, true),
     addColumn('name', 'string', 100),
     addColumn('email', 'string', 100),
@@ -46,7 +46,7 @@ addtable('employer', [
     addColumn('dateadded', 'string', 100),
 ]);
 
-addtable('candidate', [
+addtable('candidates', [
     addColumn('id', 'int', 11, false, true, true),
     addColumn('name', 'string', 100),
     addColumn('email', 'string', 100),

@@ -720,3 +720,24 @@
       </div>
     </div>';
   }
+/* ***********************************************************
+
+employees functions
+/**/
+
+function employerregister($name, $email, $phone, $address, $password, $repass)
+{
+    if (empty(trim($name)) || empty(trim($email) || empty(trim($phone))) || empty(trim($address)) || empty(trim($password))) {
+        echo 'All fields are required';
+    } else {
+        if ($password != $repass) {
+            echo 'Password does not match';
+        } elseif ($_FILES['logo']['name'] == '') {
+            echo 'select company logo';
+        } else {
+            if (insert('employers', ['name' => $name, 'email' => $email, 'phone' => $phone, 'address' => $address, 'password' => md5($password), 'status' => 'active', 'dateadded' => date('jS F, Y')], $_FILES, '../yolkassets/upload') == 'success') {
+                echo 'success';
+            }
+        }
+    }
+}

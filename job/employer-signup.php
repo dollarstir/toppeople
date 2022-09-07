@@ -49,18 +49,19 @@ begin('New Employer');
 
     <div class="create-account-area pt-100 pb-100">
         <div class="container">
+       
             <div class="create-photo">
                 
                 <form class="emploerregister">
-                    <div class="row align-items-center">
+                    <!-- <div class="row align-items-center">
                         <div class="col-lg-4">
-                            <div class="create-photo-item">
+                            <div class="create-photo-item" >
                                 <div class="create-photo-left">
                                     <div class="d-table">
                                         <div class="d-table-cell">
                                             <div class="form-group">
                                                 <i class="icofont-photobucket"></i>
-                                                <input type="file" name="logo" class="form-control-file">
+                                                <input type="file" id="uploadImage"  onchange="PreviewImage();" name="logo" class="form-control-file">
                                             </div>
                                         </div>
                                     </div>
@@ -70,14 +71,30 @@ begin('New Employer');
                             
                         </div>
                         
-                    </div>
+                    </div> -->
                 
             </div>
             <div class="create-information">
                 
-
+            
                 
-                    <h3>Account Information</h3>
+                    <h3>Employer Account Information</h3>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                        <img src= "yolkassets/thumb.jpg" id="uploadPreview" style="width: 100px; height: 100px;" />
+                        </div>
+
+
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Upload Company Logo</label><br>
+                                <input type="file" id="uploadImage"  onchange="PreviewImage();" name="logo" class="form-control-file">
+
+                            </div>
+                        </div>
+                    </div>
                     
                     <div class="row">
                         <div class="col-lg-6">
@@ -233,7 +250,21 @@ begin('New Employer');
     <?php
         foot();
         scripts();
+
   ?>
+
+<script type="text/javascript">
+
+function PreviewImage() {
+    var oFReader = new FileReader();
+    oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+
+    oFReader.onload = function (oFREvent) {
+        document.getElementById("uploadPreview").src = oFREvent.target.result;
+    };
+};
+
+</script>
 </body>
 
 </html>
