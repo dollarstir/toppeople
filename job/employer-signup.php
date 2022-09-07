@@ -120,7 +120,7 @@ begin('New Employer');
 
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label> Comfirm Password</label>
+                                <label> Confirm Password</label>
                                 <input type="password" name="repass" class="form-control">
                             </div>
                         </div>
