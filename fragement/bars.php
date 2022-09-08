@@ -777,3 +777,11 @@ function employerlogin($login, $password)
         }
     }
 }
+
+// getting employer details function ********************************************************************
+
+function employer()
+{
+    session_start();
+    $id = $_SESSION['employer']['id'];
+}

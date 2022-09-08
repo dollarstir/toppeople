@@ -46,5 +46,11 @@ $router = new Router([
             return Viewer::view('job/login.php', $context);
         }
     ),
+
+    new Route('/employerdashboard',
+        function ($context) {
+            return Viewer::view('job/empdashboard.php', $context);
+        }
+    ),
 ]);
 $router->launch();

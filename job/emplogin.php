@@ -35,7 +35,7 @@ begin('Employer Login');
                         <input type="text" name="login" class="form-control" placeholder="Phone Number or Email">
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input type="password" name="password" class="form-control" placeholder="Password">
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-success">Sign In</button>
