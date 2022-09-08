@@ -118,7 +118,7 @@ begin('New Employer');
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label>Company Address</label>
+                                <label>Company Location</label>
                                 <!-- <select name="salary" id="salary">
 
                                     <option value="2000-5000<">2000-5000</option>

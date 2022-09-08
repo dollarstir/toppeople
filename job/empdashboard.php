@@ -81,196 +81,48 @@ $employer = employer();
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <div class="create-information">
                         <form>
-                            <h3>Basic Information</h3>
-                            <div class="create-information-btn">
-                                <a href="#">Upload Cover Photo</a>
-                                <a href="#">Upload Your CV</a>
-                            </div>
+                            <h3>Employer  Information</h3>
+                            
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label>Your Name</label>
-                                        <input type="text" class="form-control" placeholder="Aikin Ward">
+                                        <label> Company Name</label>
+                                        <input type="text" name="name" class="form-control" value="<?php echo $employer['name']; ?>">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label>Your Email</label>
-                                        <input type="email" class="form-control" placeholder="hello@Topeople.com">
+                                        <label>Email </label>
+                                        <input type="email" name="email" class="form-control" value="<?php echo $employer['email']; ?>">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label>Date of Birth</label>
-                                        <input type="text" class="form-control" placeholder="21 / 2 / 1997">
+                                        <label>Phone Number</label>
+                                        
+                                        <input type="number" name="phone" class="form-control" value="<?php echo $employer['phone']; ?>">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label>Your Phone</label>
-                                        <input type="text" class="form-control" placeholder="+12345678910">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label>Job Title</label>
-                                        <input type="text" class="form-control" placeholder="UX/UI Designer">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label>Address:</label>
-                                        <input type="text" class="form-control" placeholder="210-27 Quadra, Market Street, Victoria Canada">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <div class="gender-area">
-                                            <span>Gender</span>
-                                            <input type="radio" name="gender" id="male" value="male" checked>
-                                            <label for="male">Male</label>
-                                            <input type="radio" name="gender" id="female" value="female">
-                                            <label for="female">Female</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <label>Description</label>
-                                        <textarea id="your_message" class="form-control" rows="8" placeholder="Type Here"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="create-education create-education-two">
-                        <div class="create-education-wrap">
-                            <div class="create-education-left">
-                                <h3>Education</h3>
-                            </div>
-                            <div class="create-education-right">
-                                <a href="#">Edit</a>
-                                <a href="#">Add Education</a>
-                            </div>
-                        </div>
-                        <form>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label>Title</label>
-                                        <input type="text" class="form-control" placeholder="Under Graduate">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label>Degree</label>
-                                        <input type="text" class="form-control" placeholder="BSC in Computer Science">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label>Institute</label>
-                                        <input type="text" class="form-control" placeholder="Topeople University of Design & Arts">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label>Year</label>
-                                        <input type="text" class="form-control" placeholder="2016-2019">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="create-skills">
-                        <div class="create-skills-wrap">
-                            <div class="create-skills-left">
-                                <h3>Skill</h3>
-                            </div>
-                            <div class="create-skills-right">
-                                <a href="#">Edit</a>
-                                <a href="#">Add Skill</a>
-                            </div>
-                        </div>
-                        <form>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label>Title</label>
-                                        <input type="text" class="form-control" placeholder="Frontend Design">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="skill">
-                                        <p>Percentage</p>
-                                        <div class="skill-bar skill1 skill3 wow slideInLeft animated">
-                                            <span class="skill-count1">60%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label>Name</label>
-                                        <input type="text" class="form-control" placeholder="UX/UI Design">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="skill">
-                                        <p>Percentage</p>
-                                        <div class="skill-bar skill1 skill4 wow slideInLeft animated">
-                                            <span class="skill-count1">95%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="create-skills">
-                        <div class="create-skills-wrap">
-                            <div class="create-skills-left">
-                                <h3>Social Links</h3>
-                            </div>
-                            <div class="create-skills-right">
-                                <a href="#">Edit</a>
-                                <a href="#">Add New</a>
-                            </div>
-                        </div>
-                        <form>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label>Facebook</label>
-                                        <input type="text" class="form-control" placeholder="https://www.facebook,com">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label>Instagram</label>
-                                        <input type="text" class="form-control" placeholder="https://www.instagram,com">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label>Linedin</label>
-                                        <input type="text" class="form-control" placeholder="https://www.linkedin,com">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label>Dribbble</label>
-                                        <input type="text" class="form-control" placeholder="https://www.dribble,com">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                                        <label>Company Location</label>
+                                        <!-- <select name="salary" id="salary">
 
-                    <div class="text-left">
-                        <button type="submit" class="btn create-ac-btn">Save</button>
+                                            <option value="2000-5000<">2000-5000</option>
+                                        </select> -->
+                                        <input type="text" name="address" class="form-control" value="<?php echo $employer['address']; ?>">
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn create-ac-btn">Save</button>
+                                </div>
+                                
+                            </div>
+                        </form>
                     </div>
-                    <div class="text-right">
-                        <button type="submit" class="btn create-ac-btn">Preview</button>
-                    </div>
+                    
+
+                    
                 </div>
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <div class="change-password-area">
