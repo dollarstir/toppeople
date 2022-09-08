@@ -53,9 +53,9 @@ $employer = employer();
             <div class="row align-items-center">
                 <div class="col-lg-4">
                     <div class="dashboard-img">
-                        <img src="https://templates.hibootstrap.com/Topeople/default/assets/img/dashboard/1.jpg" alt="Dashboard">
-                        <h3>Aikin Ward</h3>
-                        <p>UX/UI Designer</p>
+                        <img src="yolkassets/upload/<?php echo $employer['logo']; ?>" alt="Dashboard">
+                        <h3><?php echo $employer['name']; ?></h3>
+                        <!-- <p>UX/UI Designer</p> -->
                     </div>
                 </div>
                 <div class="col-lg-8">
