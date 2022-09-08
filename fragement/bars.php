@@ -758,3 +758,22 @@ function newsletter($email)
         }
     }
 }
+
+// employer login function****************************************************************8
+
+function employerlogin($login, $password)
+{
+    if (empty(trim($login)) || empty(trim($password))) {
+        echo 'All fields are required';
+    } else {
+        if (authenticate('employers', [['email', '=', $login]]) == 'success' || authenticate('employers', [['phone', '=', $login]]) == 'success') {
+            if (loginauth('employers', 'employer', [['email', '=', $login], ['password', '=', md5($password)]], 'AND') == 'success') {
+                echo 'success';
+            } else {
+                echo 'Invalid login details';
+            }
+        } else {
+            echo 'Email or phone number not found';
+        }
+    }
+}

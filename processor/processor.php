@@ -16,6 +16,11 @@ if (isset($_GET['action'])) {
             newsletter($email);
             break;
 
+        case 'employerlogin':
+            extract($_POST);
+            employerlogin($login, $password);
+            break;
+
         default:
 
         break;

@@ -137,7 +137,6 @@ $(function(){
 $('.emploerregister').submit(function(e){
 
     e.preventDefault();
-    // before();
     var staff = {
         url: 'processor/processor.php?action=emploerregister',
         type: 'post',
@@ -156,7 +155,7 @@ $('.emploerregister').submit(function(e){
 $('.newsletter-form').submit(function(e){
 
   e.preventDefault();
-  // before();
+  
   var staff = {
       url: 'processor/processor.php?action=newsletter',
       type: 'post',
@@ -172,8 +171,27 @@ $('.newsletter-form').submit(function(e){
 });
 
 
+// employer login
 
 
+
+$('.employerlogin').submit(function(e){
+
+  e.preventDefault();
+  
+  var staff = {
+      url: 'processor/processor.php?action=employerlogin',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
 
 
 
