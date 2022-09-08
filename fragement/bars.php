@@ -784,4 +784,8 @@ function employer()
 {
     session_start();
     $id = $_SESSION['employer']['id'];
+
+    $employer = customfetch('employers', [['id', '=', $id]]);
+
+    return $employer[0];
 }
