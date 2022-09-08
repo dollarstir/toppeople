@@ -11,6 +11,11 @@ if (isset($_GET['action'])) {
 
             break;
 
+        case 'newsletter':
+            extract($_POST);
+            newsletter($email);
+            break;
+
         default:
 
         break;

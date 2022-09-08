@@ -235,17 +235,10 @@
             <img src="assets/img/shape/2.png" alt="Shape" />
           </div>
           <div class="subscribe-item">
-            <form class="newsletter-form" data-toggle="validator">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Enter Your Email"
-                name="EMAIL"
-                required
-                autocomplete="off"
-              />
+            <form class="newsletter-form">
+              <input type="email" class="form-control" placeholder="Enter Your Email" name="email" required autocomplete="off"/>
               <button class="btn subscribe-btn" type="submit">Subscribe</button>
-              <div id="validator-newsletter" class="form-result"></div>
+             <!-- <div id="validator-newsletter" class="form-result"></div>-->
             </form>
           </div>
         </div>
@@ -740,10 +733,27 @@ function employerregister($name, $email, $phone, $address, $password, $repass)
             } else {
                 if (insert('employers', ['name' => $name, 'email' => $email, 'phone' => $phone, 'address' => $address, 'password' => md5($password), 'status' => 'active', 'dateadded' => date('jS F, Y')], $_FILES, '../yolkassets/upload') == 'success') {
                     echo 'success';
+                } else {
+                    echo 'failed to create account try again';
                 }
-                else{
-                  echo 'failed to create account try again';
-                }
+            }
+        }
+    }
+}
+// newsletter subscription*******************************
+
+function newsletter($email)
+{
+    if (empty(trim($email))) {
+        echo 'Email is required';
+    } else {
+        if (authenticate('newsletters', [['email', '=', $email]]) == 'success') {
+            echo 'You  are already a subscriber';
+        } else {
+            if (insert('newsletters', ['email' => $email, 'dateadded' => date('jS F, Y')]) == 'success') {
+                echo 'success';
+            } else {
+                echo 'failed to subscribe try again';
             }
         }
     }

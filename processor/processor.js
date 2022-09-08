@@ -1,10 +1,7 @@
 
 $(function(){
 
-   function loadfile(event) {
-    var image = document.getElementById('output');
-    image.src = URL.createObjectURL(event.target.files[0]);
-  };
+   
 
  
    $('#socl').click(function(){
@@ -129,9 +126,9 @@ $(function(){
         title: 'Please Wait !',
         html: 'request in progress...',// add html attribute if you want or remove
         allowOutsideClick: false,
-        onBeforeOpen: () => {
-            Swal.showLoading()
-        },
+        // onBeforeOpen: () => {
+        //     Swal.showLoading()
+        // },
     });
 }
 
@@ -153,6 +150,25 @@ $('.emploerregister').submit(function(e){
 
     };
     $.ajax(staff);
+});
+// newsletter
+
+$('.newsletter-form').submit(function(e){
+
+  e.preventDefault();
+  // before();
+  var staff = {
+      url: 'processor/processor.php?action=newsletter',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
 });
 
 

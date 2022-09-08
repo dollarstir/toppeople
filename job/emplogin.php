@@ -1,7 +1,7 @@
 <?php
 involve('bars');
 
-begin('Login');
+begin('Employer Login');
 
 ?>
 
@@ -27,10 +27,38 @@ begin('Login');
 
     <div class="login-area pt-100">
         <div class="container">
+            <br><br><br><br>
             <h2>Login Your Account</h2>
+            
+            <form class="employerlogin">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Phone Number or Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success">Sign In</button>
+                </div>
+            </form>
+            <br>
+            <div class="login-sign-in">
+                <a href="#">Forgot Password?</a>
+                <ul>
+                    <li>Don’t Have Account ?</li>
+                    <li>
+                        <a href="newemployer">Sign Up Here</a>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <br>
+
             <div class="login-wrap">
+                <p class="text-center">OR</p>
                 <div class="row">
-                <div class="col-sm-6 col-lg-6">
+                    <div class="col-sm-6 col-lg-12">
                         <a href="candidateauth">
                         <div class="jobseeker-item">
                             <div class="jobseeker-icon">
@@ -44,25 +72,10 @@ begin('Login');
                         </div>
                         </a>
                     </div>
-                    <div class="col-sm-6 col-lg-6">
-                        <a href="employerauth">
-
-                        <div class="jobseeker-item">
-                            <div class="jobseeker-icon">
-                                <i class="flaticon-recruitment"></i>
-                            </div>
-                            <div class="jobseeker-inner">
-                                <span>Employer</span>
-                                <h3>Login as a Employer<i class="icofont-arrow-right"></i></h3>
-                            </div>
-                            
-                        </div>
-                        </a>
-                        
-                    </div>
+                    
                 </div>
             </div>
-            
+           
         </div>
     </div>
 
