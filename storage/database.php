@@ -116,6 +116,7 @@ addtable('appliedjobs',
     [
      addColumn('id', 'int', 11, false, true, true),
      addColumn('cid', 'string', 100),
+     addColumn('eid', 'string', 100),
      addColumn('jid', 'string', 100),
      addColumn('status', 'string', 100),
      addColumn('dateapplied', 'string', 100), ]

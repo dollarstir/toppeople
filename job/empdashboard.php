@@ -215,72 +215,7 @@ $employer = employer();
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="job-item wow fadeInUp" data-wow-delay=".3s">
-                                    <img src="assets/img/home-1/jobs/3.png" alt="Job">
-                                    <div class="job-inner align-items-center">
-                                        <div class="job-inner-left">
-                                            <h3>
-                                                <a href="job-details.php">Senior Manager</a>
-                                            </h3>
-                                            <a class="company" href="company-details.php">Glovibo.com</a>
-                                            <ul>
-                                                <li>
-                                                    <i class="icofont-money-bag"></i>
-                                                    $20k - $25k
-                                                </li>
-                                                <li>
-                                                    <i class="icofont-location-pin"></i>
-                                                    Location 210-27 Quadra, Market Street, Victoria Canada
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="job-inner-right">
-                                            <ul>
-                                                <li>
-                                                    <a href="create-account.php">Edit</a>
-                                                </li>
-                                                <li>
-                                                    <span>Intern</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="job-item wow fadeInUp" data-wow-delay=".4s">
-                                    <img src="assets/img/home-1/jobs/4.png" alt="Job">
-                                    <div class="job-inner align-items-center">
-                                        <div class="job-inner-left">
-                                            <h3>
-                                                <a href="job-details.php">Product Designer</a>
-                                            </h3>
-                                            <a class="company" href="company-details.php">Bizotic.com</a>
-                                            <ul>
-                                                <li>
-                                                    <i class="icofont-money-bag"></i>
-                                                    $20k - $25k
-                                                </li>
-                                                <li>
-                                                    <i class="icofont-location-pin"></i>
-                                                    Location 210-27 Quadra, Market Street, Victoria Canada
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="job-inner-right">
-                                            <ul>
-                                                <li>
-                                                    <a href="create-account.php">Edit</a>
-                                                </li>
-                                                <li>
-                                                    <span>Part Time</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
