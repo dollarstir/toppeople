@@ -68,7 +68,7 @@ $employer = employer();
                                 <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Change Password</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Saved Jobs</a>
+                                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">My Jobs</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="pills-logout-tab" data-bs-toggle="pill" href="#pills-logout" role="tab" aria-controls="pills-logout" aria-selected="false">Logout</a>
@@ -172,7 +172,7 @@ $employer = employer();
                                         <div class="job-inner-right">
                                             <ul>
                                                 <li>
-                                                    <a href="create-account.php">Apply</a>
+                                                    <a href="create-account.php">Edit</a>
                                                 </li>
                                                 <li>
                                                     <span>Full Time</span>
@@ -205,7 +205,7 @@ $employer = employer();
                                         <div class="job-inner-right">
                                             <ul>
                                                 <li>
-                                                    <a href="create-account.php">Apply</a>
+                                                    <a href="create-account.php">Edit</a>
                                                 </li>
                                                 <li>
                                                     <span>Part Time</span>
@@ -238,7 +238,7 @@ $employer = employer();
                                         <div class="job-inner-right">
                                             <ul>
                                                 <li>
-                                                    <a href="create-account.php">Apply</a>
+                                                    <a href="create-account.php">Edit</a>
                                                 </li>
                                                 <li>
                                                     <span>Intern</span>
@@ -271,7 +271,7 @@ $employer = employer();
                                         <div class="job-inner-right">
                                             <ul>
                                                 <li>
-                                                    <a href="create-account.php">Apply</a>
+                                                    <a href="create-account.php">Edit</a>
                                                 </li>
                                                 <li>
                                                     <span>Part Time</span>
