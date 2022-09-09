@@ -127,18 +127,18 @@ $employer = employer();
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <div class="change-password-area">
                         <h2>Change Your Password</h2>
-                        <form>
+                        <form class="employerchangepass">
                             <div class="form-group">
                                 <label>Current Password:</label>
-                                <input type="password" class="form-control">
+                                <input type="password" name="oldpass" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>New Password:</label>
-                                <input type="password" class="form-control">
+                                <input type="password" name="newpass" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>Confirm Password:</label>
-                                <input type="password" class="form-control">
+                                <input type="password" name="repass" class="form-control">
                             </div>
                             <div class="text-left">
                                 <button type="submit" class="btn change-pass-btn">Save</button>

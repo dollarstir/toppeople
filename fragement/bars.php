@@ -800,6 +800,7 @@ function employerchangepass($oldpass, $newpass, $repass)
         if ($newpass != $repass) {
             echo 'Password does not match';
         } else {
+            session_start();
             if (authenticate('employers', [['id', '=', $_SESSION['employer']['id']], ['password', '=', md5($oldpass)]]) == 'success') {
                 if (update('employers', ['password' => md5($newpass)], ['id' => $_SESSION['employer']['id']]) == 'success') {
                     echo 'success';
