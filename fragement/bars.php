@@ -789,3 +789,26 @@ function employer()
 
     return $employer[0];
 }
+
+// change employer password********************************************************************
+
+function employerchangepass($oldpass, $newpass, $repass)
+{
+    if (empty(trim($oldpass)) || empty(trim($newpass)) || empty(trim($repass))) {
+        echo 'All fields are required';
+    } else {
+        if ($newpass != $repass) {
+            echo 'Password does not match';
+        } else {
+            if (authenticate('employers', [['id', '=', $_SESSION['employer']['id']], ['password', '=', md5($oldpass)]]) == 'success') {
+                if (update('employers', ['password' => md5($newpass)], ['id' => $_SESSION['employer']['id']]) == 'success') {
+                    echo 'success';
+                } else {
+                    echo 'failed to change password try again';
+                }
+            } else {
+                echo 'Invalid old password';
+            }
+        }
+    }
+}

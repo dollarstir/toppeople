@@ -193,6 +193,25 @@ $('.employerlogin').submit(function(e){
   $.ajax(staff);
 });
 
+// change emplyerpassword
+$('.employerchangepass').submit(function(e){
+
+  e.preventDefault();
+  
+  var staff = {
+      url: 'processor/processor.php?action=employerchangepass',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
 
 
 

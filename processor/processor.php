@@ -21,6 +21,11 @@ if (isset($_GET['action'])) {
             employerlogin($login, $password);
             break;
 
+        case 'employerchangepass':
+            extract($_POST);
+            employerchangepass($oldpass, $newpass, $repass);
+            break;
+
         default:
 
         break;
