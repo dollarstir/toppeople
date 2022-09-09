@@ -803,7 +803,7 @@ function employerchangepass($oldpass, $newpass, $repass)
             session_start();
             if (authenticate('employers', [['id', '=', $_SESSION['employer']['id']], ['password', '=', md5($oldpass)]], 'AND') == 'success') {
                 if (update('employers', ['password' => md5($newpass)], ['id' => $_SESSION['employer']['id']]) == 'success') {
-                    echo 'success';
+                    echo 'Updated Successfully';
                 } else {
                     echo 'failed to change password try again';
                 }
