@@ -69,9 +69,16 @@ $employer = employer();
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">My Jobs</a>
+                                
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-history-tab" data-bs-toggle="pill" href="#pills-history" role="tab" aria-controls="pills-contact" aria-selected="false">Recruiter History</a>
+                                
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="pills-logout-tab" data-bs-toggle="pill" href="#pills-logout" role="tab" aria-controls="pills-logout" aria-selected="false">Logout</a>
+                                <a class="nav-link" id="pills-logout-tab" data-bs-toggle="pill" href="#pills-logout" role="tab" aria-controls="pills-logout" aria-selected="false">Subscription</a>
                             </li>
                         </ul>
                     </div>
@@ -151,7 +158,7 @@ $employer = employer();
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="job-item wow fadeInUp" data-wow-delay=".3s">
-                                    <img src="assets/img/home-1/jobs/1.png" alt="Job">
+                                    <img src="job/assets/img/home-1/jobs/1.png" alt="Job">
                                     <div class="job-inner align-items-center">
                                         <div class="job-inner-left">
                                             <h3>
@@ -184,7 +191,7 @@ $employer = employer();
                             </div>
                             <div class="col-lg-6">
                                 <div class="job-item wow fadeInUp" data-wow-delay=".4s">
-                                    <img src="assets/img/home-1/jobs/2.png" alt="Job">
+                                    <img src="job/assets/img/home-1/jobs/2.png" alt="Job">
                                     <div class="job-inner align-items-center">
                                         <div class="job-inner-left">
                                             <h3>
@@ -219,6 +226,90 @@ $employer = employer();
                         </div>
                     </div>
                 </div>
+
+
+
+                <!-- History tab -->
+
+                <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-history-tab">
+                    <div class="dashboard-saved-job">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="job-item wow fadeInUp" data-wow-delay=".3s">
+                                    <img src="job/assets/img/home-1/profile/2.jpg" alt="Job" style="width:70px;height:80px;margin-left:-10px;margin-top:-20px;">
+                                    <div class="job-inner align-items-center">
+                                        <div class="job-inner-left">
+                                            <h3>
+                                                
+                                                <a href="job-details.php">UI/UX Designer</a>
+                                            </h3>
+                                           
+                                            <ul>
+                                            <li>
+                                                    <i class="icofont-user"></i>
+                                                    Frederick Ennin
+                                                </li>
+                                                <li>
+                                                    <i class="icofont-money-bag"></i>
+                                                    Match percentage : 10%
+                                                </li>
+                                                <li>
+                                                    <a href="candidate-details.php">View Profile
+                                                    <i class="icofont-swoosh-right"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="job-inner-right">
+                                            <ul>
+                                                <li>
+                                                    <a href="create-account.php">Decline</a>
+                                                </li>
+                                                <li>
+                                                    <span>Accept</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="job-item wow fadeInUp" data-wow-delay=".4s">
+                                    <img src="job/assets/img/home-1/jobs/2.png" alt="Job">
+                                    <div class="job-inner align-items-center">
+                                        <div class="job-inner-left">
+                                            <h3>
+                                                <a href="job-details.php">Android Developer</a>
+                                            </h3>
+                                            <a class="company" href="company-details.php">Infiniza.com</a>
+                                            <ul>
+                                                <li>
+                                                    <i class="icofont-money-bag"></i>
+                                                    $20k - $25k
+                                                </li>
+                                                <li>
+                                                    <i class="icofont-location-pin"></i>
+                                                    Location 210-27 Quadra, Market Street, Victoria Canada
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="job-inner-right">
+                                            <ul>
+                                                <li>
+                                                    <a href="create-account.php">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <span>Part Time</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- history tab -->
                 <div class="tab-pane fade" id="pills-logout" role="tabpanel" aria-labelledby="pills-logout-tab">
                     <div class="login-area dashboard-logout-area">
                         <div class="login-wrap">
