@@ -29,6 +29,11 @@ addtable(
     ]
 );
 
+addTable('salary', [
+    addColumn('id', 'int', 11, false, true, true),
+    addColumn('range', 'string', 100),
+]);
+
 addtable('category', [
     addColumn('id', 'int', 11, false, true, true),
     addColumn('name', 'string', 100),

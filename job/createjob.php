@@ -79,10 +79,10 @@ $employer = employer();
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Company Name</label>
-                                <input type="text" class="form-control" placeholder="Toppeople" value="<?php echo $employer['name']; ?>">
+                                <input name="name" type="text" class="form-control" placeholder="Toppeople" value="<?php echo $employer['name']; ?>" readonly>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <!-- <div class="col-lg-6">
                             <div class="form-group">
                                 <div class="job-currency-area">
                                     <label>Company Name</label>
@@ -91,6 +91,21 @@ $employer = employer();
                                         <option>$USD</option>
                                         <option>EURO</option>
                                         <option>POUND</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Salary Range</label>
+                                <div class="job-category-area">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option>IT & Technology</option>
+                                        <option>Web Developer</option>
+                                        <option>UX/UI Design</option>
+                                        <option>SEO</option>
                                     </select>
                                 </div>
                             </div>
