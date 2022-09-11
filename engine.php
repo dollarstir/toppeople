@@ -52,5 +52,11 @@ $router = new Router([
             return Viewer::view('job/empdashboard.php', $context);
         }
     ),
+
+    new Route('/newjob',
+        function ($context) {
+            return Viewer::view('job/createjob.php', $context);
+        }
+    ),
 ]);
 $router->launch();
