@@ -7,6 +7,7 @@
  * *************************************************************************************.
  * to migrate your database tables , open your websitename/migration.
  */
+
 addtable(
     'job',
     [
