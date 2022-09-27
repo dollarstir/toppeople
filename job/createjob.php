@@ -143,6 +143,13 @@ $employer = employer();
                                 <textarea id="your_message" name="description" rows="8" class="form-control"></textarea>
                             </div>
                         </div>
+
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label>Requirement </label>
+                                <textarea id="your_message" name="description" rows="8" class="form-control" placeholder="Seperate each with Comma(,)"></textarea>
+                            </div>
+                        </div>
                     </div>
                     <div class="text-left">
                         <button type="submit" class="btn create-ac-btn">Post</button>
