@@ -109,6 +109,22 @@ $employer = employer();
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Gender Needed For work</label>
+                                <div class="job-category-area">
+                                    <select class="form-select" name="salary" aria-label="Default select example">
+                                        <option>Select Gender Needed</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Any">Any</option>
+                                        
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Vacancies</label>
@@ -137,6 +153,8 @@ $employer = employer();
                                 </div>
                             </div>
                         </div>
+
+                        
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label>Job Description</label>
