@@ -101,11 +101,10 @@ $employer = employer();
                             <div class="form-group">
                                 <label>Salary Range</label>
                                 <div class="job-category-area">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option>IT & Technology</option>
-                                        <option>Web Developer</option>
-                                        <option>UX/UI Design</option>
-                                        <option>SEO</option>
+                                    <select class="form-select" name="salary" aria-label="Default select example">
+                                        <option>Select Salary Range</option>
+                                        <?php listsalary(); ?>
+                                        
                                     </select>
                                 </div>
                             </div>
@@ -113,29 +112,26 @@ $employer = employer();
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Vacancies</label>
-                                <input type="text" class="form-control" placeholder="10">
+                                <input type="text" name="vacancy" class="form-control" placeholder="10">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Location</label>
-                                <input type="text" class="form-control" placeholder="210-27 Quadra, Market Street, Victoria Canada">
+                                <input type="text" name="location" class="form-control" placeholder="210-27 Quadra, Market Street, Victoria Canada">
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <div class="job-type-area">
                                     <span>Job Type</span>
+                                   
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
-                                        <label class="form-check-label" for="inlineRadio1">Full Time</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <input class="form-check-input" type="radio" name="type" id="inlineRadio2" value="Part-Time">
                                         <label class="form-check-label" for="inlineRadio2">Part Time</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
+                                        <input class="form-check-input" type="radio" name="type" id="inlineRadio3" value="Intern">
                                         <label class="form-check-label" for="inlineRadio3">Intern</label>
                                     </div>
                                 </div>
@@ -144,7 +140,7 @@ $employer = employer();
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label>Job Description</label>
-                                <textarea id="your_message" rows="8" class="form-control"></textarea>
+                                <textarea id="your_message" name="description" rows="8" class="form-control"></textarea>
                             </div>
                         </div>
                     </div>

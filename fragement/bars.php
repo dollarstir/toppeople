@@ -813,3 +813,11 @@ function employerchangepass($oldpass, $newpass, $repass)
         }
     }
 }
+
+function listsalary()
+{
+    $s = fetchAll('salary');
+    foreach ($s as $salary) {
+        echo '<option value="'.$salary['id'].'">'.$salary['salary'].'</option>';
+    }
+}

@@ -15,7 +15,7 @@ addtable(
         addColumn('title', 'string', 50),
         addcolumn('company', 'string', 100),
         addcolumn('category', 'string', 100),
-        // addcolumn('address', 'text', null, true),
+        addcolumn('location', 'text', null, true),
         addcolumn('vacancy', 'string', 100, true),
         addcolumn('type', 'string', 100),
         addcolumn('salary', 'string', 100, true),
