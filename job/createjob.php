@@ -137,6 +137,31 @@ $employer = employer();
                                 <input type="text" name="location" class="form-control" placeholder="210-27 Quadra, Market Street, Victoria Canada">
                             </div>
                         </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Experience</label>
+                                <div class="job-category-area">
+                                    <select class="form-select" name="gender" aria-label="Default select example">
+                                        <option>Years of experience</option>
+                                        <option value="Below 1 year">Below 1 Year</option>
+                                        <option value="1 year">1 year</option>
+                                        <option value="2 years">2 years</option>
+                                        <option value="3 years">3 years</option>
+                                        <option value="4 years">4 years</option>
+                                        <option value="5 years">5 years</option>
+                                        <option value="6 years">6 years</option>
+                                        <option value="7 years">7 years</option>
+                                        <option value="8 years">8 years</option>
+                                        <option value="9 years">9 years</option>
+                                        <option value="10 years">10 years</option>
+                                        <option value="Above 10 years">Above 10 years</option>
+                                        
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <div class="job-type-area">
