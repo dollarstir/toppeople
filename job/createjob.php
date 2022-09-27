@@ -142,7 +142,7 @@ $employer = employer();
                             <div class="form-group">
                                 <label>Experience</label>
                                 <div class="job-category-area">
-                                    <select class="form-select" name="gender" aria-label="Default select example">
+                                    <select class="form-select" name="experience" aria-label="Default select example">
                                         <option>Years of experience</option>
                                         <option value="Below 1 year">Below 1 Year</option>
                                         <option value="1 year">1 year</option>
