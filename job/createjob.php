@@ -112,9 +112,9 @@ $employer = employer();
 
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label>Gender Needed For work</label>
+                                <label>Gender Needed For Work</label>
                                 <div class="job-category-area">
-                                    <select class="form-select" name="salary" aria-label="Default select example">
+                                    <select class="form-select" name="gender" aria-label="Default select example">
                                         <option>Select Gender Needed</option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
@@ -165,7 +165,7 @@ $employer = employer();
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label>Requirement </label>
-                                <textarea id="your_message" name="description" rows="8" class="form-control" placeholder="Seperate each with Comma(,)"></textarea>
+                                <textarea id="your_message" name="requirement" rows="8" class="form-control" placeholder="Seperate each with Comma(,)"></textarea>
                             </div>
                         </div>
                     </div>
