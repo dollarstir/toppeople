@@ -60,18 +60,20 @@ $employer = employer();
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Job Title</label>
-                                <input type="text" class="form-control" placeholder="UX/UI Designer">
+                                <input type="text" name="title" class="form-control" placeholder="UX/UI Designer">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Job Category</label>
                                 <div class="job-category-area">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option>IT & Technology</option>
+                                    <select class="form-select" name="category" aria-label="Default select example">
+                                        <option>Select Category</option>
+                                        <?php listcategory() ; ?>
+                                    <!-- <option>IT & Technology</option>
                                         <option>Web Developer</option>
                                         <option>UX/UI Design</option>
-                                        <option>SEO</option>
+                                        <option>SEO</option> -->
                                     </select>
                                 </div>
                             </div>
@@ -82,21 +84,7 @@ $employer = employer();
                                 <input name="name" type="text" class="form-control" placeholder="Toppeople" value="<?php echo $employer['name']; ?>" readonly>
                             </div>
                         </div>
-                        <!-- <div class="col-lg-6">
-                            <div class="form-group">
-                                <div class="job-currency-area">
-                                    <label>Company Name</label>
-                                    <input type="text" class="form-control" placeholder="Winbrans.com">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option>$USD</option>
-                                        <option>EURO</option>
-                                        <option>POUND</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div> -->
-
-
+                        
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Salary Range</label>
@@ -160,6 +148,13 @@ $employer = employer();
                                         
                                     </select>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Deadline For Application</label>
+                                <input type="text" name="deadline" class="form-control" placeholder="210-27 Quadra, Market Street, Victoria Canada">
                             </div>
                         </div>
                         <div class="col-lg-12">

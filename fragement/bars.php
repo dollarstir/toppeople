@@ -821,3 +821,11 @@ function listsalary()
         echo '<option value="'.$salary['id'].'">'.$salary['salary'].'</option>';
     }
 }
+
+function listcategory()
+{
+    $s = fetchAll('category');
+    foreach ($s as $category) {
+        echo '<option value="'.$category['id'].'">'.$category['name'].'</option>';
+    }
+}
