@@ -852,7 +852,7 @@ function employerjobs()
     $id = $_SESSION['employer']['id'];
     $logo = $_SESSION['employer']['logo'];
     $company = $_SESSION['employer']['name'];
-    $jobs = customfetch('job', ['company', '=', $id]);
+    $jobs = customfetch('job', [['company', '=', $id]]);
 
     foreach ($jobs as $job) {
         echo '<div class="col-lg-6">
@@ -878,7 +878,7 @@ function employerjobs()
                 <div class="job-inner-right">
                     <ul>
                         <li>
-                            <a href="editjob">Edit</a>
+                            <a href="editjob?token='.$job['id'].'">Edit</a>
                         </li>
                         <li>
                             <span>'.$job['type'].'</span>

@@ -1,10 +1,17 @@
 <?php
 involve('bars');
 
-begin('Post Job');
+begin('Edit Job');
 
 mainchecker('employer', 'employerauth');
 $employer = employer();
+
+$jobid = $_GET['token'];
+$job = customfetch('job', [['id', '=', $jobid]]);
+$job = $job[0];
+$catid = $job['category'];
+$category = customfetch('category', [['id', '=', $catid]]);
+$category = $category[0];
 ?>
 
 <body>
@@ -32,15 +39,15 @@ $employer = employer();
             <div class="d-table-cell">
                 <div class="container">
                     <div class="page-title-text">
-                        <h2>Post A Job</h2>
+                        <h2>Edit <?php echo $job['title']; ?></h2>
                         <ul>
                             <li>
-                                <a href="index.php">Home</a>
+                                <a href="home">Home</a>
                             </li>
                             <li>
                                 <i class="icofont-simple-right"></i>
                             </li>
-                            <li>Post A Job</li>
+                            <li>Edit <?php echo $job['title']; ?></li>
                         </ul>
                     </div>
                 </div>
@@ -52,28 +59,25 @@ $employer = employer();
     <div class="post-job-area pt-100">
         <div class="container">
             <div class="post-job-item">
-                <form class="newjob">
+                <form class="editjob">
                     <div class="post-job-heading">
-                        <h2>Post Your Job</h2>
+                        <h2>Edit <?php echo $job['title']; ?></h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Job Title</label>
-                                <input type="text" name="title" class="form-control" placeholder="UX/UI Designer">
+                                <input type="text" name="title" class="form-control" placeholder="UX/UI Designer" value="<?php echo $job['title']; ?>">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Job Category</label>
                                 <div class="job-category-area">
-                                    <select class="form-select" name="category" aria-label="Default select example">
-                                        <option>Select Category</option>
+                                    <select class="form-select" name="category" aria-label="Default select example" value="<?php echo $job['category']; ?>">
+                                        <option value="<?php echo $catid; ?>"><?php echo $category['name']; ?></option>
                                         <?php listcategory(); ?>
-                                    <!-- <option>IT & Technology</option>
-                                        <option>Web Developer</option>
-                                        <option>UX/UI Design</option>
-                                        <option>SEO</option> -->
+                                    
                                     </select>
                                 </div>
                             </div>
@@ -90,8 +94,8 @@ $employer = employer();
                             <div class="form-group">
                                 <label>Salary Range</label>
                                 <div class="job-category-area">
-                                    <select class="form-select" name="salary" aria-label="Default select example">
-                                        <option>Select Salary Range</option>
+                                    <select class="form-select" name="salary" aria-label="Default select example" value="<?php echo $job['salary']; ?>">
+                                        <option value="<?php echo $job['salary']; ?>"><?php echo $job['salary']; ?></option>
                                         <?php listsalary(); ?>
                                         
                                     </select>
@@ -103,8 +107,8 @@ $employer = employer();
                             <div class="form-group">
                                 <label>Gender Needed For Work</label>
                                 <div class="job-category-area">
-                                    <select class="form-select" name="gender" aria-label="Default select example">
-                                        <option>Select Gender Needed</option>
+                                    <select class="form-select" name="gender" aria-label="Default select example" value="<?php echo $job['gender']; ?>">
+                                        <option value="<?php echo $job['gender']; ?>"><?php echo $job['gender']; ?></option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
                                         <option value="Any">Any</option>
@@ -117,13 +121,13 @@ $employer = employer();
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Vacancies</label>
-                                <input type="text" name="vacancy" class="form-control" placeholder="10">
+                                <input type="text" name="vacancy" class="form-control" placeholder="10" value="<?php echo $job['vacancy']; ?>">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Location</label>
-                                <input type="text" name="location" class="form-control" placeholder="210-27 Quadra, Market Street, Victoria Canada" value="<?php echo $employer['address']; ?>">
+                                <input type="text" name="location" class="form-control" placeholder="210-27 Quadra, Market Street, Victoria Canada" value="<?php echo $job['location']; ?>">
                             </div>
                         </div>
 
@@ -131,8 +135,8 @@ $employer = employer();
                             <div class="form-group">
                                 <label>Experience</label>
                                 <div class="job-category-area">
-                                    <select class="form-select" name="experience" aria-label="Default select example">
-                                        <option>Years of experience</option>
+                                    <select class="form-select" name="experience" aria-label="Default select example" value="<?php echo $job['experience']; ?>">
+                                        <option value="<?php echo $job['experience']; ?>"><?php echo $job['experience']; ?></option>
                                         <option value="Below 1 year">Below 1 Year</option>
                                         <option value="1 year">1 year</option>
                                         <option value="2 years">2 years</option>
@@ -158,8 +162,8 @@ $employer = employer();
                             <div class="form-group">
                                 <label>Qualification</label>
                                 <div class="job-category-area">
-                                    <select class="form-select" name="qualification" aria-label="Default select example">
-                                        <option>Choose qualification</option>
+                                    <select class="form-select" name="qualification" aria-label="Default select example" value="<?php echo $job['qualification']; ?>">
+                                        <option value="<?php echo $job['qualification']; ?>"><?php echo $job['qualification']; ?></option>
                                         <option value="Any">Any</option>
                                         <option value="BECE">BECE</option>
                                         <option value="WASSCE/SSCE">WASSCE/SSCE</option>
@@ -178,15 +182,15 @@ $employer = employer();
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Deadline For Application</label>
-                                <input type="date" name="deadline" class="form-control" placeholder="210-27 Quadra, Market Street, Victoria Canada">
+                                <input type="text" name="deadline" class="form-control" placeholder="Deadline" value="<?php echo $job['deadline']; ?>">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Job Type</label>
                                 <div class="job-category-area">
-                                    <select class="form-select" name="type" aria-label="Default select example">
-                                        <option>Choose Job type</option>
+                                    <select class="form-select" name="type" aria-label="Default select example" value="<?php echo $job['type']; ?>">
+                                        <option value="<?php echo $job['type']; ?>"><?php echo $job['type']; ?></option>
                                         <option value="Part-Time">Part-Time</option>
                                         <option value="Intern">Intern</option>
                                         
@@ -202,19 +206,19 @@ $employer = employer();
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label>Job Description</label>
-                                <textarea id="your_message" name="description" rows="8" class="form-control"></textarea>
+                                <textarea id="your_message" name="description" rows="8" class="form-control"><?php echo $job['description']; ?></textarea>
                             </div>
                         </div>
 
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label>Requirement </label>
-                                <textarea id="your_message" name="requirement" rows="8" class="form-control" placeholder="Seperate each with Comma(,)"></textarea>
+                                <textarea id="your_message" name="requirement" rows="8" class="form-control" placeholder="Seperate each with Comma(,)"><?php echo $job['requirement']; ?></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="text-left">
-                        <button type="submit" class="btn create-ac-btn">Post</button>
+                        <button type="submit" class="btn create-ac-btn">Save</button>
                     </div>
                 </form>
             </div>
