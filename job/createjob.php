@@ -69,7 +69,7 @@ $employer = employer();
                                 <div class="job-category-area">
                                     <select class="form-select" name="category" aria-label="Default select example">
                                         <option>Select Category</option>
-                                        <?php listcategory() ; ?>
+                                        <?php listcategory(); ?>
                                     <!-- <option>IT & Technology</option>
                                         <option>Web Developer</option>
                                         <option>UX/UI Design</option>
@@ -82,6 +82,7 @@ $employer = employer();
                             <div class="form-group">
                                 <label>Company Name</label>
                                 <input name="name" type="text" class="form-control" placeholder="Toppeople" value="<?php echo $employer['name']; ?>" readonly>
+                                <input type="hidden" name="company" value="<?php echo $employer['id']; ?>">
                             </div>
                         </div>
                         
