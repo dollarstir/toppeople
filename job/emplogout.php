@@ -2,4 +2,4 @@
 
 session_start();
 unset($_SESSION['employer']);
-echo '<script>winddow.location="login";</script>';
+echo '<script>window.location.href = "home";</script>';

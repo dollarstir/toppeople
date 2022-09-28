@@ -70,5 +70,10 @@ $router = new Router([
             return Viewer::view('job/updatejob.php', $context);
         }
     ),
+    new Route('/employersjobs',
+        function ($context) {
+            return Viewer::view('job/empjobview.php', $context);
+        }
+    ),
 ]);
 $router->launch();
