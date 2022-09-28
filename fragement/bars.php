@@ -556,24 +556,42 @@
                   <a href="#" class="nav-link">Products</a>
                 </li>
               </ul>
-              <div class="common-btn">
-                <a class="login-btn" href="employerdashboard">
-                  <i class="icofont-notification"></i>
-                  
-                </a>
+              <div class="common-btn">';
 
-                
-                <a class="login-btn" href="employerdashboard">
-                  <i class="icofont-home"></i>
-                  
-                </a>
+      if (isset($_SESSION['employer'])) {
+          echo '<a class="login-btn" href="employerdashboard">
+          <i class="icofont-notification"></i>
+          
+        </a>
 
-                
-                <a class="login-btn" href="employerlogout">
-                  <i class="icofont-power"></i>
-                  Logout
-                </a>
-              </div>
+        
+        <a class="login-btn" href="employerdashboard">
+          <i class="icofont-home"></i>
+          
+        </a>
+
+        
+        <a class="login-btn" href="employerlogout">
+          <i class="icofont-power"></i>
+          Logout
+        </a>';
+      } else {
+          echo '<a class="login-btn" href="employerauth">
+          <i class="icofont-lock"></i>
+          Login
+        </a>
+
+        
+        
+
+        
+        <a class="sign-up-btn" href="newemployer">
+          <i class="icofont-user"></i>
+          Sign Up
+        </a>';
+      }
+
+      echo' </div>
             </div>
           </nav>
         </div>

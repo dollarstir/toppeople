@@ -47,6 +47,12 @@ $router = new Router([
         }
     ),
 
+    new Route('/employerlogout',
+        function ($context) {
+            return Viewer::view('job/emplogout.php', $context);
+        }
+    ),
+
     new Route('/employerdashboard',
         function ($context) {
             return Viewer::view('job/empdashboard.php', $context);
