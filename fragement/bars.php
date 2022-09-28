@@ -450,7 +450,7 @@
             <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a href="post-a-job.php" class="nav-link">Post a Job</a>
+                  <a href="newjob" class="nav-link">Post a Job</a>
                 </li>
     
                 <!-- <li class="nav-item">
