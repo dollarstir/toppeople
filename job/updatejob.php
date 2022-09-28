@@ -68,6 +68,8 @@ $category = $category[0];
                             <div class="form-group">
                                 <label>Job Title</label>
                                 <input type="text" name="title" class="form-control" placeholder="UX/UI Designer" value="<?php echo $job['title']; ?>">
+                                <input type="hidden" name="id" class="form-control" placeholder="UX/UI Designer" value="<?php echo $job['id']; ?>">
+
                             </div>
                         </div>
                         <div class="col-lg-6">

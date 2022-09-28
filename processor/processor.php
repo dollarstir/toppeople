@@ -31,6 +31,10 @@ if (isset($_GET['action'])) {
             newjob($title, $company, $vacancy, $type, $gender, $requirement, $description, $location, $salary, $category, $experience, $qualification, $deadline);
             break;
 
+        case 'editjob':
+            extract($_POST);
+            editjob($title, $company, $vacancy, $type, $gender, $requirement, $description, $location, $salary, $category, $experience, $qualification, $deadline, $id);
+            break;
         default:
 
         break;
