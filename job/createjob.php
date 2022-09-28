@@ -123,7 +123,7 @@ $employer = employer();
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Location</label>
-                                <input type="text" name="location" class="form-control" placeholder="210-27 Quadra, Market Street, Victoria Canada">
+                                <input type="text" name="location" class="form-control" placeholder="210-27 Quadra, Market Street, Victoria Canada" value="<?php echo $employer['address']; ?>">
                             </div>
                         </div>
 
@@ -145,6 +145,29 @@ $employer = employer();
                                         <option value="9 years">9 years</option>
                                         <option value="10 years">10 years</option>
                                         <option value="Above 10 years">Above 10 years</option>
+                                        
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Qualification</label>
+                                <div class="job-category-area">
+                                    <select class="form-select" name="qualification" aria-label="Default select example">
+                                        <option>Choose qualification</option>
+                                        <option value="Any">Any</option>
+                                        <option value="BECE">BECE</option>
+                                        <option value="WASSCE/SSCE">WASSCE/SSCE</option>
+                                        <option value="Diplomas/Certificates">Diplomas/Certificates</option>
+                                        <option value="Bachelor Degree">Bachelor Degree</option>
+                                        <option value="Masters Degree">Masters Degree</option>
+                                        <option value="PHD">PHD</option>
+                                        
                                         
                                         
                                     </select>
