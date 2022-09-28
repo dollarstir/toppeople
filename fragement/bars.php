@@ -878,7 +878,7 @@ function employerjobs()
                 <div class="job-inner-right">
                     <ul>
                         <li>
-                            <a href="create-account.php">Edit</a>
+                            <a href="editjob">Edit</a>
                         </li>
                         <li>
                             <span>'.$job['type'].'</span>

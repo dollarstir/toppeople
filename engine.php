@@ -58,5 +58,11 @@ $router = new Router([
             return Viewer::view('job/createjob.php', $context);
         }
     ),
+
+    new Route('/editjob',
+        function ($context) {
+            return Viewer::view('job/updatejob.php', $context);
+        }
+    ),
 ]);
 $router->launch();
