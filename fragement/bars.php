@@ -557,13 +557,21 @@
                 </li>
               </ul>
               <div class="common-btn">
-                <a class="login-btn" href="login.php">
-                  <i class="icofont-plus-square"></i>
-                  Login
+                <a class="login-btn" href="employerdashboard">
+                  <i class="icofont-notification"></i>
+                  
                 </a>
-                <a class="sign-up-btn" href="signup.php">
-                  <i class="icofont-user-alt-4"></i>
-                  Sign Up
+
+                
+                <a class="login-btn" href="employerdashboard">
+                  <i class="icofont-home"></i>
+                  
+                </a>
+
+                
+                <a class="login-btn" href="employerlogout">
+                  <i class="icofont-power"></i>
+                  Logout
                 </a>
               </div>
             </div>
