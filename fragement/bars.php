@@ -818,7 +818,7 @@ function listsalary()
 {
     $s = fetchAll('salary');
     foreach ($s as $salary) {
-        echo '<option value="'.$salary['id'].'">'.$salary['salary'].'</option>';
+        echo '<option value="'.$salary['salary'].'">'.$salary['salary'].'</option>';
     }
 }
 
@@ -857,7 +857,7 @@ function employerjobs()
     foreach ($jobs as $job) {
         echo '<div class="col-lg-6">
         <div class="job-item wow fadeInUp" data-wow-delay=".3s">
-            <img src="yolkassets/upload/'.$logo.'" alt="Job" style="width:50px;height:50px;">
+            <img src="yolkassets/upload/'.$logo.'" alt="Job" style="width:70px;height:70px;">
             <div class="job-inner align-items-center">
                 <div class="job-inner-left">
                     <h3>
