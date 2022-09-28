@@ -52,7 +52,7 @@ $employer = employer();
     <div class="post-job-area pt-100">
         <div class="container">
             <div class="post-job-item">
-                <form>
+                <form class="newjob">
                     <div class="post-job-heading">
                         <h2>Post Your Job</h2>
                     </div>
