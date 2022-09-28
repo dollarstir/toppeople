@@ -93,6 +93,24 @@ $(function(){
               });
 
         }
+
+
+        else if(response == 'jobadded'){
+
+          swal({
+              title: "Success",
+              text: "Job Added Successfuly",
+              timer: 1000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location="employerdashboard";
+            });
+
+      }
         else if(response == 'employersuccess'){
 
           swal({
@@ -101,9 +119,9 @@ $(function(){
               timer: 1000,
               type: 'success',
               padding: "2em",
-              // onOpen: function () {
-              //   swal.showLoading();
-              // },
+              onOpen: function () {
+                swal.showLoading();
+              },
             }).then(function (result) {
               window.location="employerdashboard";
             });
@@ -229,6 +247,25 @@ $('.employerchangepass').submit(function(e){
 });
 
 
+// employer post job
+
+$('.newjob').submit(function(e){
+
+  e.preventDefault();
+  
+  var staff = {
+      url: 'processor/processor.php?action=newjob',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
 
 
     

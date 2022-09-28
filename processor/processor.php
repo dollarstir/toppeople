@@ -26,6 +26,11 @@ if (isset($_GET['action'])) {
             employerchangepass($oldpass, $newpass, $repass);
             break;
 
+        case 'newjob':
+            extract($_POST);
+            newjob($title, $company, $vacancy, $type, $gender, $requirement, $description, $location, $salary, $category, $experience, $qualification, $deadline);
+            break;
+
         default:
 
         break;
