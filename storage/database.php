@@ -23,7 +23,7 @@ addtable(
         addcolumn('requirement', 'text', null, true),
         addcolumn('qualification', 'text', null, true),
         addcolumn('experience', 'text', null, true),
-        addcolumn('deadline', 'date', null, true),
+        addcolumn('deadline', 'string', 100),
         addcolumn('gender', 'string', 100),
         addcolumn('status', 'string', 100, true),
         addcolumn('dateposted', 'string', 100),

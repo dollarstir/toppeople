@@ -836,11 +836,57 @@ function newjob($title, $company, $vacancy, $type, $gender, $requirement, $descr
     if (empty(trim($title)) || empty(trim($company)) || empty(trim($vacancy)) || empty(trim($type)) || empty(trim($gender)) || empty(trim($requirement)) || empty(trim($description)) || empty(trim($location)) || empty(trim($salary)) || empty(trim($category)) || empty(trim($experience)) || empty(trim($qualification)) || empty(trim($deadline))) {
         echo 'All fields are required';
     } else {
-        $record = ['title' => $title, 'company' => $company, 'category' => $category, 'location' => $location, 'vacancy' => $vacancy, 'types' => $type, 'salary' => $salary, 'description' => $description, 'requirement' => $requirement, 'qualification' => $qualification, 'experience' => $experience, 'deadline' => $deadline, 'gender' => $gender, 'status' => 'active', 'dateadded' => date('jS F, Y')];
-        if (insert('jobs', $record) == 'success') {
-            echo 'jobsuccess';
+        $record = ['title' => $title, 'company' => $company, 'category' => $category, 'location' => $location, 'vacancy' => $vacancy, 'type' => $type, 'salary' => $salary, 'description' => $description, 'requirement' => $requirement, 'qualification' => $qualification, 'experience' => $experience, 'deadline' => $deadline, 'gender' => $gender, 'status' => 'active', 'dateposted' => date('jS F, Y')];
+        if (insert('job', $record) == 'success') {
+            echo 'jobadded';
         } else {
             echo 'failed to create job try again';
         }
+    }
+}
+
+// displayer employer jobs function********************************************************************
+function employerjobs()
+{
+    session_start();
+    $id = $_SESSION['employer']['id'];
+    $logo = $_SESSION['employer']['logo'];
+    $company = $_SESSION['employer']['name'];
+    $jobs = customfetch('job', ['company', '=', $id]);
+
+    foreach ($jobs as $job) {
+        echo '<div class="col-lg-6">
+        <div class="job-item wow fadeInUp" data-wow-delay=".3s">
+            <img src="yolkassets/upload/'.$logo.'" alt="Job">
+            <div class="job-inner align-items-center">
+                <div class="job-inner-left">
+                    <h3>
+                        <a href="job-details.php">'.$job['title'].'</a>
+                    </h3>
+                    <a class="company" href="company-details.php">'.$company.'</a>
+                    <ul>
+                        <li>
+                            <i class="icofont-money-bag"></i>
+                            '.$job['salary'].'
+                        </li>
+                        <li>
+                            <i class="icofont-location-pin"></i>
+                            '.$job['location'].'
+                        </li>
+                    </ul>
+                </div>
+                <div class="job-inner-right">
+                    <ul>
+                        <li>
+                            <a href="create-account.php">Edit</a>
+                        </li>
+                        <li>
+                            <span>'.$job['type'].'</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>';
     }
 }

@@ -74,7 +74,7 @@ $employer = employer();
 
 
                             <li class="nav-item">
-                                <a class="nav-link" id="pills-history-tab" data-bs-toggle="pill" href="#pills-history" role="tab" aria-controls="pills-contact" aria-selected="false">Recruiter History</a>
+                                <a class="nav-link" id="pills-history-tab" data-bs-toggle="pill" href="#pills-history" role="tab" aria-controls="pills-history" aria-selected="false">Recruiter History</a>
                                 
                             </li>
                             <li class="nav-item">
@@ -156,72 +156,8 @@ $employer = employer();
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                     <div class="dashboard-saved-job">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="job-item wow fadeInUp" data-wow-delay=".3s">
-                                    <img src="job/assets/img/home-1/jobs/1.png" alt="Job">
-                                    <div class="job-inner align-items-center">
-                                        <div class="job-inner-left">
-                                            <h3>
-                                                <a href="job-details.php">UI/UX Designer</a>
-                                            </h3>
-                                            <a class="company" href="company-details.php">Winbrans.com</a>
-                                            <ul>
-                                                <li>
-                                                    <i class="icofont-money-bag"></i>
-                                                    $20k - $25k
-                                                </li>
-                                                <li>
-                                                    <i class="icofont-location-pin"></i>
-                                                    Location 210-27 Quadra, Market Street, Victoria Canada
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="job-inner-right">
-                                            <ul>
-                                                <li>
-                                                    <a href="create-account.php">Edit</a>
-                                                </li>
-                                                <li>
-                                                    <span>Full Time</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="job-item wow fadeInUp" data-wow-delay=".4s">
-                                    <img src="job/assets/img/home-1/jobs/2.png" alt="Job">
-                                    <div class="job-inner align-items-center">
-                                        <div class="job-inner-left">
-                                            <h3>
-                                                <a href="job-details.php">Android Developer</a>
-                                            </h3>
-                                            <a class="company" href="company-details.php">Infiniza.com</a>
-                                            <ul>
-                                                <li>
-                                                    <i class="icofont-money-bag"></i>
-                                                    $20k - $25k
-                                                </li>
-                                                <li>
-                                                    <i class="icofont-location-pin"></i>
-                                                    Location 210-27 Quadra, Market Street, Victoria Canada
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="job-inner-right">
-                                            <ul>
-                                                <li>
-                                                    <a href="create-account.php">Edit</a>
-                                                </li>
-                                                <li>
-                                                    <span>Part Time</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php employerjobs(); ?>
+                            
                             
                         </div>
                     </div>
