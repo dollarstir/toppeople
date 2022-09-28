@@ -896,7 +896,7 @@ function editjob($title, $company, $vacancy, $type, $gender, $requirement, $desc
     if (empty(trim($title)) || empty(trim($company)) || empty(trim($vacancy)) || empty(trim($type)) || empty(trim($gender)) || empty(trim($requirement)) || empty(trim($description)) || empty(trim($location)) || empty(trim($salary)) || empty(trim($category)) || empty(trim($experience)) || empty(trim($qualification)) || empty(trim($deadline))) {
         echo 'All fields are required';
     } else {
-        $record = ['title' => $title, 'company' => $company, 'category' => $category, 'location' => $location, 'vacancy' => $vacancy, 'type' => $type, 'salary' => $salary, 'description' => $description, 'requirement' => $requirement, 'qualification' => $qualification, 'experience' => $experience, 'deadline' => $deadline, 'gender' => $gender, 'status' => 'active', 'dateposted' => date('jS F, Y')];
+        $record = ['title' => $title, 'company' => $company, 'category' => $category, 'location' => $location, 'vacancy' => $vacancy, 'type' => $type, 'salary' => $salary, 'description' => $description, 'requirement' => $requirement, 'qualification' => $qualification, 'experience' => $experience, 'deadline' => $deadline, 'gender' => $gender, 'status' => 'active'];
         if (update('job', $record, ['id' => $id]) == 'success') {
             echo 'Updated Successfully';
         } else {
