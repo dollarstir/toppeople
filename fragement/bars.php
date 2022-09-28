@@ -768,7 +768,7 @@ function employerlogin($login, $password)
     } else {
         if (authenticate('employers', [['email', '=', $login]]) == 'success' || authenticate('employers', [['phone', '=', $login]]) == 'success') {
             if (loginauth('employers', 'employer', [['email', '=', $login], ['password', '=', md5($password)]], 'AND') == 'success') {
-                echo 'success';
+                echo 'employersuccess';
             } else {
                 echo 'Invalid login details';
             }

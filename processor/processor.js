@@ -93,6 +93,22 @@ $(function(){
               });
 
         }
+        else if(response == 'employersuccess'){
+
+          swal({
+              title: "Success",
+              text: "Login Successful",
+              timer: 1000,
+              type: 'success',
+              padding: "2em",
+              // onOpen: function () {
+              //   swal.showLoading();
+              // },
+            }).then(function (result) {
+              window.location="employerdashboard";
+            });
+
+      }
 
 
         else if(response == 'loginfailed'){
