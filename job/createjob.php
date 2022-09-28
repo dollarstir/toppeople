@@ -181,19 +181,19 @@ $employer = employer();
                                 <input type="text" name="deadline" class="form-control" placeholder="210-27 Quadra, Market Street, Victoria Canada">
                             </div>
                         </div>
-                        <div class="col-lg-12">
+                        <div class="col-lg-6">
                             <div class="form-group">
-                                <div class="job-type-area">
-                                    <span>Job Type</span>
-                                   
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="type" id="inlineRadio2" value="Part-Time">
-                                        <label class="form-check-label" for="inlineRadio2">Part Time</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="type" id="inlineRadio3" value="Intern">
-                                        <label class="form-check-label" for="inlineRadio3">Intern</label>
-                                    </div>
+                                <label>Job Type</label>
+                                <div class="job-category-area">
+                                    <select class="form-select" name="type" aria-label="Default select example">
+                                        <option>Choose Job type</option>
+                                        <option value="Part-Time">Part-Time</option>
+                                        <option value="Intern">Intern</option>
+                                        
+                                        
+                                        
+                                        
+                                    </select>
                                 </div>
                             </div>
                         </div>
