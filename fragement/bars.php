@@ -600,7 +600,7 @@
   {
       echo '<div class="navbar-area fixed-top">
       <div class="mobile-nav">
-        <a href="index.php" class="logo">
+        <a href="home" class="logo">
           <img src="assets/img/logo.png" alt="Logo" />
         </a>
       </div>
@@ -645,28 +645,28 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a href="employers.php" class="nav-link">Employer</a>
+                  <a href="employer" class="nav-link">Employer</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link dropdown-toggle">Resources <i class="icofont-simple-down"></i></a>
                   <ul class="dropdown-menu">
                     <li class="nav-item">
-                      <a href="blog.php" class="nav-link">Blog</a>
+                      <a href="job/blog.php" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
-                      <a href="events.php" class="nav-link">Events</a>
+                      <a href="job/events.php" class="nav-link">Events</a>
                     </li>
                     <li class="nav-item">
-                      <a href="courses.php" class="nav-link">Courses</a>
+                      <a href="job/courses.php" class="nav-link">Courses</a>
                     </li>
                     <li class="nav-item">
-                      <a href="skills.php" class="nav-link">Skills Assesment</a>
+                      <a href="job/skills.php" class="nav-link">Skills Assesment</a>
                     </li>
                     <li class="nav-item">
-                      <a href="cv-review.php" class="nav-link">CV Review</a>
+                      <a href="job/cv-review.php" class="nav-link">CV Review</a>
                     </li>
                     <!-- <li class="nav-item">
-                      <a href="dashboard.php" class="nav-link">Candidate dashboard</a>
+                      <a href="job/dashboard.php" class="nav-link">Candidate dashboard</a>
                     </li> -->
                   </ul>
                 </li>
@@ -674,34 +674,34 @@
                   <a href="#" class="nav-link dropdown-toggle">Pages <i class="icofont-simple-down"></i></a>
                   <ul class="dropdown-menu">
                     <li class="nav-item">
-                      <a href="company-list.php" class="nav-link">Company List</a>
+                      <a href="job/company-list.php" class="nav-link">Company List</a>
                     </li>
                     <li class="nav-item">
-                      <a href="company-details.php" class="nav-link">Company Details</a>
+                      <a href="job/company-details.php" class="nav-link">Company Details</a>
                     </li>
                     <li class="nav-item">
-                      <a href="login.php" class="nav-link">Login Page</a>
+                      <a href="candiddateauth" class="nav-link">Login Page</a>
                     </li>
                     <li class="nav-item">
                       <a href="create-account.php" class="nav-link">Create Account Page</a>
                     </li>
                     <li class="nav-item">
-                      <a href="profile.php" class="nav-link">Profile</a>
+                      <a href="job/profile.php" class="nav-link">Profile</a>
                     </li>
                     <li class="nav-item">
-                      <a href="single-profile.php" class="nav-link">Single Profile</a>
+                      <a href="job/single-profile.php" class="nav-link">Single Profile</a>
                     </li>
                     <li class="nav-item">
-                      <a href="404.php" class="nav-link">404</a>
+                      <a href="job/404.php" class="nav-link">404</a>
                     </li>
                     <li class="nav-item">
-                      <a href="faq.php" class="nav-link">FAQ</a>
+                      <a href="job/faq.php" class="nav-link">FAQ</a>
                     </li>
                     <li class="nav-item">
-                      <a href="terms-and-conditions.php" class="nav-link">Terms and Conditions</a>
+                      <a href="job/terms-and-conditions.php" class="nav-link">Terms and Conditions</a>
                     </li>
                     <li class="nav-item">
-                      <a href="privacy-policy.php" class="nav-link">Privacy Policy</a>
+                      <a href="job/privacy-policy.php" class="nav-link">Privacy Policy</a>
                     </li>
                   </ul>
                 </li>
@@ -709,10 +709,10 @@
                   <a href="#" class="nav-link dropdown-toggle">Blogs <i class="icofont-simple-down"></i></a>
                   <ul class="dropdown-menu">
                     <li class="nav-item">
-                      <a href="blog.php" class="nav-link">Blog</a>
+                      <a href="job/blog.php" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
-                      <a href="blog-details.php" class="nav-link">Blog Details</a>
+                      <a href="job/blog-details.php" class="nav-link">Blog Details</a>
                     </li>
                   </ul>
                 </li> -->
@@ -721,11 +721,11 @@
                 </li>
               </ul>
               <div class="common-btn">
-                <a class="login-btn" href="login.php">
+                <a class="login-btn" href="candidateauth">
                   <i class="icofont-plus-square"></i>
                   Login
                 </a>
-                <a class="sign-up-btn" href="signup.php">
+                <a class="sign-up-btn" href="newcandidate">
                   <i class="icofont-user-alt-4"></i>
                   Sign Up
                 </a>
