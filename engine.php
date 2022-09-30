@@ -89,6 +89,12 @@ $router = new Router([
         }
     ),
 
+    new Route('/about',
+        function ($context) {
+            return Viewer::view('job/about.php', $context);
+        }
+    ),
+
     new Route('/editjob',
         function ($context) {
             return Viewer::view('job/updatejob.php', $context);
