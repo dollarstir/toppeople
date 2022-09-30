@@ -1020,20 +1020,29 @@ function myproducts()
 
 function somejobs()
 {
-    $jobs = fetchAll('job');
+    session_start();
+    $id = $_SESSION['employer']['id'];
+    // $logo = $_SESSION['employer']['logo'];
+
+    $jobs = fetchall('job');
+
     foreach ($jobs as $job) {
         $u = customfetch('employers', [['id', '=', $job['company']]]);
         $logo = $u[0]['logo'];
         $company = $u[0]['name'];
-        echo '<div class="col-lg-6 mix Intern">
+
+        if ($u[0]['id'] == $id) {
+            echo '<div class="col-lg-6 mix '.$job['type'].'">
         <div class="job-item">
-          <img src="yolkassets/upload/'.$logo.'" alt="Job" />
+          <img src="yolkassets/upload/'.$logo.'" alt="Job"  style="width:80px;height:80px;"/>
           <div class="job-inner align-items-center">
             <div class="job-inner-left">
               <h3>
                 <a href="job/job-details.php">'.$job['title'].'</a>
               </h3>
-              <a class="company" href="job/company-details.php">'.$company.'</a>
+              <a class="company" href=""
+                >'.$company.'</a
+              >
               <ul>
                 <li>
                   <i class="icofont-money-bag"></i>
@@ -1041,14 +1050,14 @@ function somejobs()
                 </li>
                 <li>
                   <i class="icofont-location-pin"></i>
-                 '.$job[['location']].'
+                  '.$job['location'].'
                 </li>
               </ul>
             </div>
             <div class="job-inner-right">
               <ul>
-                <li>
-                  <a href="job/job-details.php">Apply</a>
+                 <li>
+                  <a href="editjob?token='.$job['id'].'">Edit</a>
                 </li>
                 <li>
                   <span>'.$job['type'].'</span>
@@ -1058,5 +1067,42 @@ function somejobs()
           </div>
         </div>
       </div>';
+        } else {
+            echo '<div class="col-lg-6 mix '.$job['type'].'">
+      <div class="job-item">
+        <img src="yolkassets/upload/'.$logo.'" alt="Job"  style="width:80px;height:80px;"/>
+        <div class="job-inner align-items-center">
+          <div class="job-inner-left">
+            <h3>
+              <a href="">'.$job['title'].'</a>
+            </h3>
+            <a class="company" href=""
+              >'.$company.'</a
+            >
+            <ul>
+              <li>
+                <i class="icofont-money-bag"></i>
+                '.$job['salary'].'
+              </li>
+              <li>
+                <i class="icofont-location-pin"></i>
+                '.$job['location'].'
+              </li>
+            </ul>
+          </div>
+          <div class="job-inner-right">
+            <ul>
+               <li>
+                <a href="">Apply</a>
+              </li>
+              <li>
+                <span>'.$job['type'].'</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>';
+        }
     }
 }

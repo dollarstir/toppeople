@@ -196,7 +196,7 @@ begin('Welcome');
       </div>
       <div id="container">
         <div class="row">
-          <?php myproducts(); ?>
+          <?php somejobs(); ?>
           
          
         </div>
