@@ -949,7 +949,7 @@ function myproducts()
             <div class="job-inner align-items-center">
               <div class="job-inner-left">
                 <h3>
-                  <a href="job-details.html">'.$job['title'].'</a>
+                  <a href="job/job-details.php">'.$job['title'].'</a>
                 </h3>
                 <a class="company" href=""
                   >'.$company.'</a
@@ -985,7 +985,7 @@ function myproducts()
           <div class="job-inner align-items-center">
             <div class="job-inner-left">
               <h3>
-                <a href="job-details.html">'.$job['title'].'</a>
+                <a href="">'.$job['title'].'</a>
               </h3>
               <a class="company" href=""
                 >'.$company.'</a
@@ -1015,5 +1015,48 @@ function myproducts()
         </div>
       </div>';
         }
+    }
+}
+
+function somejobs()
+{
+    $jobs = fetchAll('job');
+    foreach ($jobs as $job) {
+        $u = customfetch('employers', [['id', '=', $job['company']]]);
+        $logo = $u[0]['logo'];
+        $company = $u[0]['name'];
+        echo '<div class="col-lg-6 mix '.$job['type'].'">
+        <div class="job-item">
+          <img src="yolkassets/upload/'.$logo.'" alt="Job" />
+          <div class="job-inner align-items-center">
+            <div class="job-inner-left">
+              <h3>
+                <a href="job/job-details.php">'.$job['title'].'</a>
+              </h3>
+              <a class="company" href="job/company-details.php">'.$company.'</a>
+              <ul>
+                <li>
+                  <i class="icofont-money-bag"></i>
+                  '.$job['salary'].'
+                </li>
+                <li>
+                  <i class="icofont-location-pin"></i>
+                 '.$job[['location']].'
+                </li>
+              </ul>
+            </div>
+            <div class="job-inner-right">
+              <ul>
+                <li>
+                  <a href="job/job-details.php">Apply</a>
+                </li>
+                <li>
+                  <span>'.$job['type'].'</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>';
     }
 }
