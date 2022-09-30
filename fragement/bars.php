@@ -1025,7 +1025,7 @@ function somejobs()
         $u = customfetch('employers', [['id', '=', $job['company']]]);
         $logo = $u[0]['logo'];
         $company = $u[0]['name'];
-        echo '<div class="col-lg-6 mix '.$job['type'].'">
+        echo '<div class="col-lg-6 mix Intern">
         <div class="job-item">
           <img src="yolkassets/upload/'.$logo.'" alt="Job" />
           <div class="job-inner align-items-center">
