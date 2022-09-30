@@ -46,7 +46,7 @@
  {
      echo '<div class="navbar-area fixed-top">
      <div class="mobile-nav">
-       <a href="index.php" class="logo">
+       <a href="home" class="logo">
          <img src="job/assets/img/logo.png" alt="Logo" />
        </a>
      </div>
@@ -324,7 +324,7 @@
                 <h3>Quick Links</h3>
                 <ul>
                   <li>
-                    <a href="index.php">
+                    <a href="home">
                       <i class="icofont-simple-right"></i>
                       Home
                     </a>
@@ -433,7 +433,7 @@
   {
       echo '<div class="navbar-area fixed-top">
       <div class="mobile-nav">
-        <a href="index.php" class="logo">
+        <a href="home" class="logo">
           <img src="assets/img/logo.png" alt="Logo" />
         </a>
       </div>
@@ -441,7 +441,7 @@
       <div class="main-nav">
         <div class="container">
           <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand" href="index.php">
+            <a class="navbar-brand" href="home">
               <img src="assets/img/logo.png" alt="Logo" />
             </a>
             <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -608,7 +608,7 @@
       <div class="main-nav">
         <div class="container">
           <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand" href="index.php">
+            <a class="navbar-brand" href="home">
               <img src="assets/img/logo.png" alt="Logo" />
             </a>
             <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
