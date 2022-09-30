@@ -94,6 +94,11 @@ $router = new Router([
             return Viewer::view('job/about.php', $context);
         }
     ),
+    new Route('/contact',
+        function ($context) {
+            return Viewer::view('job/contact.php', $context);
+        }
+    ),
 
     new Route('/editjob',
         function ($context) {

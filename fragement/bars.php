@@ -68,28 +68,28 @@
                </li>
    
                <li class="nav-item">
-                 <a href="candidates.php" class="nav-link">Candidate</a>
+                 <a href="job/candidates.php" class="nav-link">Candidate</a>
                </li>
                <li class="nav-item">
                  <a href="#" class="nav-link dropdown-toggle">Resources <i class="icofont-simple-down"></i></a>
                  <ul class="dropdown-menu">
                    <li class="nav-item">
-                     <a href="blog.php" class="nav-link">Blog</a>
+                     <a href="job/blog.php" class="nav-link">Blog</a>
                    </li>
                    <li class="nav-item">
-                     <a href="events.php" class="nav-link">Events</a>
+                     <a href="job/events.php" class="nav-link">Events</a>
                    </li>
                    <li class="nav-item">
-                     <a href="courses.php" class="nav-link">Courses</a>
+                     <a href="job/courses.php" class="nav-link">Courses</a>
                    </li>
                    <li class="nav-item">
-                     <a href="skills.php" class="nav-link">Skills Assesment</a>
+                     <a href="job/skills.php" class="nav-link">Skills Assesment</a>
                    </li>
                    <li class="nav-item">
-                     <a href="cv-review.php" class="nav-link">CV Review</a>
+                     <a href="job/cv-review.php" class="nav-link">CV Review</a>
                    </li>
                    <li class="nav-item">
-                     <a href="job-by-us.php" class="nav-link">job by Us</a>
+                     <a href="job/job-by-us.php" class="nav-link">job by Us</a>
                    </li>
                  </ul>
                </li>
@@ -97,31 +97,31 @@
                  <a href="#" class="nav-link dropdown-toggle">About <i class="icofont-simple-down"></i></a>
                  <ul class="dropdown-menu">
                    <li class="nav-item">
-                     <a href="aboutus.php" class="nav-link">About Us</a>
+                     <a href="about" class="nav-link">About Us</a>
                    </li>
                    <li class="nav-item">
-                     <a href="careers.php" class="nav-link">Careers</a>
+                     <a href="job/careers.php" class="nav-link">Careers</a>
                    </li>
                    <li class="nav-item">
-                     <a href="candidates-dashboard.php" class="nav-link">Candidates Dashboard</a>
+                     <a href="job/candidates-dashboard.php" class="nav-link">Candidates Dashboard</a>
                    </li>
                    <li class="nav-item">
-                     <a href="browse-by-category.php" class="nav-link">Browse by category</a>
+                     <a href="job/browse-by-category.php" class="nav-link">Browse by category</a>
                    </li>
                    <li class="nav-item">
-                     <a href="faq.php" class="nav-link">FAQs</a>
+                     <a href="job/faq.php" class="nav-link">FAQs</a>
                    </li>
                    <li class="nav-item">
-                     <a href="single-resume.php" class="nav-link">Terms and Services</a>
+                     <a href="job/single-resume.php" class="nav-link">Terms and Services</a>
                    </li>
                    <li class="nav-item">
-                     <a href="submit-resume.php" class="nav-link">Privacy Policy</a>
+                     <a href="job/submit-resume.php" class="nav-link">Privacy Policy</a>
                    </li>
                    <li class="nav-item">
-                     <a href="pricing.php" class="nav-link">Pricing</a>
+                     <a href="job/pricing.php" class="nav-link">Pricing</a>
                    </li>
                    <li class="nav-item">
-                     <a href="dashboard.php" class="nav-link">Candidate dashboard</a>
+                     <a href="job/dashboard.php" class="nav-link">Candidate dashboard</a>
                    </li>
                  </ul>
                </li>
@@ -129,34 +129,34 @@
                  <a href="#" class="nav-link dropdown-toggle">Pages <i class="icofont-simple-down"></i></a>
                  <ul class="dropdown-menu">
                    <li class="nav-item">
-                     <a href="company-list.php" class="nav-link">Company List</a>
+                     <a href="job/company-list.php" class="nav-link">Company List</a>
                    </li>
                    <li class="nav-item">
-                     <a href="company-details.php" class="nav-link">Company Details</a>
+                     <a href="job/company-details.php" class="nav-link">Company Details</a>
                    </li>
                    <li class="nav-item">
-                     <a href="login.php" class="nav-link">Login Page</a>
+                     <a href="job/login.php" class="nav-link">Login Page</a>
                    </li>
                    <li class="nav-item">
-                     <a href="create-account.php" class="nav-link">Create Account Page</a>
+                     <a href="job/create-account.php" class="nav-link">Create Account Page</a>
                    </li>
                    <li class="nav-item">
-                     <a href="profile.php" class="nav-link">Profile</a>
+                     <a href="job/profile.php" class="nav-link">Profile</a>
                    </li>
                    <li class="nav-item">
-                     <a href="single-profile.php" class="nav-link">Single Profile</a>
+                     <a href="job/single-profile.php" class="nav-link">Single Profile</a>
                    </li>
                    <li class="nav-item">
-                     <a href="404.php" class="nav-link">404</a>
+                     <a href="job/404.php" class="nav-link">404</a>
                    </li>
                    <li class="nav-item">
-                     <a href="faq.php" class="nav-link">FAQ</a>
+                     <a href="job/faq.php" class="nav-link">FAQ</a>
                    </li>
                    <li class="nav-item">
                      <a href="terms-and-conditions.php" class="nav-link">Terms and Conditions</a>
                    </li>
                    <li class="nav-item">
-                     <a href="privacy-policy.php" class="nav-link">Privacy Policy</a>
+                     <a href="job/privacy-policy.php" class="nav-link">Privacy Policy</a>
                    </li>
                  </ul>
                </li>
@@ -164,15 +164,15 @@
                  <a href="#" class="nav-link dropdown-toggle">Blogs <i class="icofont-simple-down"></i></a>
                  <ul class="dropdown-menu">
                    <li class="nav-item">
-                     <a href="blog.php" class="nav-link">Blog</a>
+                     <a href="job/blog.php" class="nav-link">Blog</a>
                    </li>
                    <li class="nav-item">
-                     <a href="blog-details.php" class="nav-link">Blog Details</a>
+                     <a href="job/blog-details.php" class="nav-link">Blog Details</a>
                    </li>
                  </ul>
                </li> -->
                <li class="nav-item">
-                 <a href="contact.php" class="nav-link">Contact</a>
+                 <a href="contact" class="nav-link">Contact</a>
                </li>
              </ul>
              <div class="common-btn">
@@ -451,20 +451,20 @@
                 </li>
     
                 <!-- <li class="nav-item">
-                  <a href="employers.php" class="nav-link">Employer</a>
+                  <a href="employer" class="nav-link">Employer</a>
                 </li> -->
     
                 <!-- <li class="nav-item">
-                  <a href="about.php" class="nav-link">Candidate</a>
+                  <a href="about" class="nav-link">Candidate</a>
                 </li> -->
                 <li class="nav-item">
                   <a href="#" class="nav-link dropdown-toggle">Explore <i class="icofont-simple-down"></i></a>
                   <ul class="dropdown-menu">
                     <li class="nav-item">
-                      <a href="candidates.php" class="nav-link">Candidates</a>
+                      <a href="job/candidates.php" class="nav-link">Candidates</a>
                     </li>
                     <li class="nav-item">
-                      <a href="candidates.php" class="nav-link">Top Candidates</a>
+                      <a href="job/candidates.php" class="nav-link">Top Candidates</a>
                     </li>
                     <li class="nav-item">
                       <a href="employers.php" class="nav-link">Other Recruiters</a>
@@ -478,28 +478,28 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a href="candidates.php" class="nav-link">Candidate</a>
+                  <a href="job/candidates.php" class="nav-link">Candidate</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link dropdown-toggle">Resources <i class="icofont-simple-down"></i></a>
                   <ul class="dropdown-menu">
                     <li class="nav-item">
-                      <a href="blog.php" class="nav-link">Blog</a>
+                      <a href="job/blog.php" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
-                      <a href="events.php" class="nav-link">Events</a>
+                      <a href="job/events.php" class="nav-link">Events</a>
                     </li>
                     <!-- <li class="nav-item">
-                      <a href="single-resume.php" class="nav-link">Terms and Services</a>
+                      <a href="job/single-resume.php" class="nav-link">Terms and Services</a>
                     </li>
                     <li class="nav-item">
-                      <a href="submit-resume.php" class="nav-link">Privacy Policy</a>
+                      <a href="job/submit-resume.php" class="nav-link">Privacy Policy</a>
                     </li>
                     <li class="nav-item">
-                      <a href="pricing.php" class="nav-link">Pricing</a>
+                      <a href="job/pricing.php" class="nav-link">Pricing</a>
                     </li>
                     <li class="nav-item">
-                      <a href="dashboard.php" class="nav-link">Candidate dashboard</a>
+                      <a href="job/dashboard.php" class="nav-link">Candidate dashboard</a>
                     </li> -->
                   </ul>
                 </li>
@@ -507,34 +507,34 @@
                   <a href="#" class="nav-link dropdown-toggle">Pages <i class="icofont-simple-down"></i></a>
                   <ul class="dropdown-menu">
                     <li class="nav-item">
-                      <a href="company-list.php" class="nav-link">Company List</a>
+                      <a href="job/company-list.php" class="nav-link">Company List</a>
                     </li>
                     <li class="nav-item">
-                      <a href="company-details.php" class="nav-link">Company Details</a>
+                      <a href="job/company-details.php" class="nav-link">Company Details</a>
                     </li>
                     <li class="nav-item">
-                      <a href="login.php" class="nav-link">Login Page</a>
+                      <a href="login" class="nav-link">Login Page</a>
                     </li>
                     <li class="nav-item">
-                      <a href="create-account.php" class="nav-link">Create Account Page</a>
+                      <a href="register" class="nav-link">Create Account Page</a>
                     </li>
                     <li class="nav-item">
-                      <a href="profile.php" class="nav-link">Profile</a>
+                      <a href="job/profile.php" class="nav-link">Profile</a>
                     </li>
                     <li class="nav-item">
-                      <a href="single-profile.php" class="nav-link">Single Profile</a>
+                      <a href="job/single-profile.php" class="nav-link">Single Profile</a>
                     </li>
                     <li class="nav-item">
-                      <a href="404.php" class="nav-link">404</a>
+                      <a href="job/404.php" class="nav-link">404</a>
                     </li>
                     <li class="nav-item">
-                      <a href="faq.php" class="nav-link">FAQ</a>
+                      <a href="job/faq.php" class="nav-link">FAQ</a>
                     </li>
                     <li class="nav-item">
-                      <a href="terms-and-conditions.php" class="nav-link">Terms and Conditions</a>
+                      <a href="job/terms-and-conditions.php" class="nav-link">Terms and Conditions</a>
                     </li>
                     <li class="nav-item">
-                      <a href="privacy-policy.php" class="nav-link">Privacy Policy</a>
+                      <a href="job/privacy-policy.php" class="nav-link">Privacy Policy</a>
                     </li>
                   </ul>
                 </li>
@@ -542,10 +542,10 @@
                   <a href="#" class="nav-link dropdown-toggle">Blogs <i class="icofont-simple-down"></i></a>
                   <ul class="dropdown-menu">
                     <li class="nav-item">
-                      <a href="blog.php" class="nav-link">Blog</a>
+                      <a href="job/blog.php" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
-                      <a href="blog-details.php" class="nav-link">Blog Details</a>
+                      <a href="job/blog-details.php" class="nav-link">Blog Details</a>
                     </li>
                   </ul>
                 </li> -->
