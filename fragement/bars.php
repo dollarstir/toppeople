@@ -176,11 +176,11 @@
                </li>
              </ul>
              <div class="common-btn">
-               <a class="login-btn" href="login.php">
+               <a class="login-btn" href="login">
                  <i class="icofont-plus-square"></i>
                  Login
                </a>
-               <a class="sign-up-btn" href="signup.php">
+               <a class="sign-up-btn" href="register">
                  <i class="icofont-user-alt-4"></i>
                  Sign Up
                </a>
@@ -400,10 +400,7 @@
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
-                  Topeople.com Designed By
-                  <a href="#" target="_blank"
-                    >Dollarsoft</a
-                  >
+                  Topeople.com 
                 </p>
               </div>
             </div>

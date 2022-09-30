@@ -1,33 +1,9 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<?php
+involve('bars');
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+begin('Candidate Signup');
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
-
-    <link rel="stylesheet" href="assets/css/icofont.min.css">
-
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-
-    <link rel="stylesheet" href="assets/fonts/flaticon.css">
-
-    <link rel="stylesheet" href="assets/css/odometer.min.css">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <link rel="stylesheet" href="assets/css/responsive.css">
-
-    <link rel="stylesheet" href="assets/css/theme-dark.css">
-    <title>Topeople - Job Portal</title>
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
-</head>
+?>
 
 <body>
 
@@ -46,7 +22,7 @@
     </div>
 
 
-<?php include "sidebar.php" ?>
+    <?php topbar(); ?>
 
 
     <div class="page-title-area">
@@ -130,8 +106,8 @@
                 </ul> -->
                 <div class="text-center">
                     <!-- <button type="submit" class="btn login-btn">Sign Up</button> -->
-                    <button href="candidate-signup2.php" type="submit" class="btn login-btn">Sign Up</button>
-                    <a href="candidate-signup2.php" type="submit" class="btn login-btn">Sign Up</a>
+                    <!-- <button href="candidate-signup2.php" type="submit" class="btn login-btn">Sign Up</button> -->
+                    <a href="newcandidate2"  class="btn btn-success">Continue</a>
 
 
                     
@@ -152,29 +128,10 @@
     </div>
 
 
-    <?php include "footer.php" ?>
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/jquery.meanmenu.js"></script>
-
-    <script src="assets/js/jquery.mixitup.min.js"></script>
-
-    <script src="assets/js/owl.carousel.min.js"></script>
-
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-
-    <script src="assets/js/form-validator.min.js"></script>
-
-    <script src="assets/js/contact-form-script.js"></script>
-
-    <script src="assets/js/wow.min.js"></script>
-
-    <script src="assets/js/odometer.min.js"></script>
-    <script src="assets/js/jquery.appear.min.js"></script>
-
-    <script src="assets/js/custom.js"></script>
+    <?php
+        foot();
+        scripts();
+  ?>
 </body>
 
 </html>

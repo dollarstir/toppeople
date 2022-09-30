@@ -86,7 +86,7 @@ begin('Welcome');
               <span>Jobseeker</span>
               <h3>Looking For a Job ?</h3>
             </div>
-            <a href="job/create-account.php">Apply Now
+            <a href="newcandidate">Apply Now
               <i class="icofont-arrow-right"></i>
             </a>
           </div>
@@ -100,7 +100,7 @@ begin('Welcome');
               <span>Recruiter</span>
               <h3>Are You Recruiting ?</h3>
             </div>
-            <a href="job/post-a-job.php">Post a Job
+            <a href="newemployer">Post a Job
               <i class="icofont-arrow-right"></i>
             </a>
           </div>

@@ -47,6 +47,30 @@ $router = new Router([
         }
     ),
 
+    new Route('/register',
+        function ($context) {
+            return Viewer::view('job/signup.php', $context);
+        }
+    ),
+
+    new Route('/newcandidate',
+        function ($context) {
+            return Viewer::view('job/candidate-signup.php', $context);
+        }
+    ),
+
+    new Route('/newcandidate2',
+        function ($context) {
+            return Viewer::view('job/candidate-signup2.php', $context);
+        }
+    ),
+
+    new Route('/candidateauth',
+        function ($context) {
+            return Viewer::view('job/candidatelogin.php', $context);
+        }
+    ),
+
     new Route('/employerlogout',
         function ($context) {
             return Viewer::view('job/emplogout.php', $context);
