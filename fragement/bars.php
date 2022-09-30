@@ -1093,7 +1093,7 @@ function somejobs()
           <div class="job-inner-right">
             <ul>
                <li>
-                <a href="">Apply</a>
+                <a href="job/job-details.php">Apply</a>
               </li>
               <li>
                 <span>'.$job['type'].'</span>
